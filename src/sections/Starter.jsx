@@ -2,14 +2,13 @@ import React from "react";
 import "../styles/sections/Starter.scss";
 import Button from "../components/Button";
 import { useState } from 'react';
-import { GoPlay } from "react-icons/go";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { HiOutlineArrowLongDown, HiEnvelope } from "react-icons/hi2";
 import { TypeAnimation } from 'react-type-animation';
 
 function Starter() {
   const [fontSize, setFontSize] = useState('3rem');
   const [textColor, setTextColor] = useState('rgb(107, 110, 204)')
-
+  const envelope = <HiEnvelope />
   return (
     <div className="main-container">
       <div className="container">
@@ -38,12 +37,12 @@ function Starter() {
               />
             </div>
           <div className="button-container">
-            <Button content="Contact" icon={<GoPlay />} />
             <Button
               content="Menu"
-              icon={<HiOutlineArrowNarrowRight />}
+              icon={<HiOutlineArrowLongDown />}
               color="pink"
             />
+            <Button content='Contact  &nbsp;' icon={<HiEnvelope />} />
           </div>
         </div>
         <div className="image">

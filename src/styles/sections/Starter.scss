@@ -4,14 +4,14 @@
   margin: 0 10%;
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     padding: 2rem;
     border-radius: 2rem;
     .content {
-      grid-column: 1/3;
+      grid-column: 1/4;
       margin-top: 3.4rem;
       margin-right: 3rem;
       h1 {
@@ -25,17 +25,19 @@
         line-height: 1.9rem;
       }
       .button-container {
-        grid-column: 1/3;
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         button {
-          margin-right: 1rem;
-          margin-left: 2rem;
+          display: flex;
+          justify-content: space-between;
+          margin:  1rem;
         }
       }
     }
     .image {
       img {
-        grid-column: 2/3;
+        grid-column: 3/4;
         height: 25rem;
         width: 25rem;
         border-radius: 2rem;
