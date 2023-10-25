@@ -4,12 +4,19 @@
   margin: 0 10%;
   .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
     .content {
+      grid-column: 1/3;
       margin-top: 3.4rem;
       margin-right: 3rem;
       h1 {
-        font-size: 3rem;
+        font-size: 5rem;
+        font-weight: 900;
         color: $headingColor
       }
       p {
@@ -18,16 +25,20 @@
         line-height: 1.9rem;
       }
       .button-container {
+        grid-column: 1/3;
         display: flex;
         button {
           margin-right: 1rem;
+          margin-left: 2rem;
         }
       }
     }
     .image {
       img {
-        height: 35rem;
-        width: 35rem;
+        grid-column: 2/3;
+        height: 25rem;
+        width: 25rem;
+        border-radius: 2rem;
       }
     }
   }
