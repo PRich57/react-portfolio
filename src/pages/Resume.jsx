@@ -1,16 +1,15 @@
-import { useRouteError } from 'react-router-dom';
+import pdf from "../../src/assets/resume.pdf";
+import resume from "../../src/assets/resume.png";
 
-export default function ErrorPage() {
-  const error = useRouteError();
-  console.error(error);
-
+export default function Resume() {
   return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
-    </div>
+    <>
+      <div className="resume">
+        <a href={pdf} target='_blank'>
+          <img src={resume} alt="Pete's Resume" />
+        </a>
+      </div>
+      <h2>Resume</h2>
+    </>
   );
 }

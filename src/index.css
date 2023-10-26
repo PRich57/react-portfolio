@@ -88,6 +88,11 @@ h1 {
   color: var(--headingColor);
 }
 
+h2 {
+  font-size: 4rem;
+  color: var(--headingColor);
+}
+
 button {
   color: white;
   text-transform: uppercase;
@@ -109,12 +114,13 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 .main-container {
-  display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   width: 60%;
+  min-height: 60vh;
   /* box-shadow: 2px 1px 1px rgba(255, 255, 255, 0.224); */
   text-align: center;
   font-size: 2rem;
@@ -135,6 +141,10 @@ button:focus-visible {
   height: 25rem;
   width: 25rem;
   border-radius: 2rem;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .footer {
@@ -158,10 +168,11 @@ label {
 }
 
 input, textarea {
-  min-width: 30rem;
+  min-width: 60%;
   height: 2rem;
   margin-left: 8rem;
   margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 textarea {
