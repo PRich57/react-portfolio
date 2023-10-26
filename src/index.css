@@ -17,11 +17,18 @@
   --pinkColor: #f32a8f;
   --headingColor: rgb(107, 110, 204);
 }
+
 html {
   max-width: 100%;
   max-height: 100%;
 }
+
 body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
   max-width: 100%;
   max-height: 100%;
 }
@@ -35,26 +42,34 @@ body {
   padding: 0;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   position: relative;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   margin-bottom: 8rem;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.247); */
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   right: 10px;
+  background-color: rgba(0, 0, 0, 0.001);
 }
 nav button {
   min-width: 15rem;
   max-width: 15rem;
   max-height: 4rem;
-  background-color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -62,6 +77,7 @@ nav button {
 nav ul li {
   text-decoration: underline;
   list-style: none;
+  background-color: rgba(0, 0, 0, 0.001);
 }
 
 h1 {
@@ -72,48 +88,53 @@ h1 {
   color: var(--headingColor);
 }
 
-a {
-  font-weight: 300;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 button {
   color: white;
   text-transform: uppercase;
-  text-decoration: underline;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
-}
-
-button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, .001);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.45s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-.media-icons:hover {
-  transform: scale(1.2);
+.main-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  /* box-shadow: 2px 1px 1px rgba(255, 255, 255, 0.224); */
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 2rem;
+  padding: 3rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.247); */
+}
+
+.main-container .container .content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+
+}
+
+.main-container .container .image img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 2rem;
 }
 
 .footer {
@@ -124,114 +145,167 @@ button:focus-visible {
   bottom: 0px;
 }
 
+.mb-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: start;
+}
+
+label {
+  margin: 1rem;
+}
+
+input, textarea {
+  min-width: 30rem;
+  height: 2rem;
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+
+textarea {
+  height: 10rem
+}
+
 .media-icons {
   display: flex;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.media-icons:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1280px) {
-  /* Adjust padding for header */
+  html {
+    min-width: 100vw;
+  }
+  
+  #root {
+    min-width: 100vw;
+  }
+  
   header {
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    min-width: 20rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
   }
 
-  /* Adjust h1 margin top to fit nav bar and change font */
+  textarea {
+    height: 10rem
+  }
+
   h1 {
-    margin-top: 5rem;
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
-  /* Fix nav to top of page */
-  nav {
-    position: fixed;
-    flex-direction: column;
-    top: 0;
-    right: 0;
+  body {
     width: 100%;
-    text-align: center;
   }
-
-  /* Adjust opacity of nav bar and make flex container to alter layout */
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2rem;
-    background-color: black;
-    background-size: cover;
-    opacity: 70%;
-  }
-
-  /* Change flex direction for main and article */
-  .main-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Adjust padding of article at this size so the text field isn't too narrow */
-  article {
-    padding: 5rem;
-  }
-
-  /* Fix alignment of projects class */
-  .projects {
-    align-items: center;
-  }
-
-  /* Remove hover filter from project images now that devices may be touch screen */
-  .projects img {
-    filter: none;
-  }
-
-  /* Special sizing for cheatsheet project */
-  #cheatsheet {
-    max-width: 40rem;
-    max-height: 30rem;
-  }
-
-  /* Fix sizing for project images now that viewport size is reduced */
-  #prework,
-  #landing-page,
-  #refactor {
-    max-width: 40rem;
-    max-height: 35rem;
-  }
-
-  /* Adjust size of media icons as screen gets smaller */
-  .media-icons {
-    max-width: 7rem;
-  }
-
-  /* Add padding to right because footer becomes off center at this size */
-  footer {
-    padding-right: 2rem;
+  
+  main {
+    width: 100%;
   }
 }
 
-/* Begin adjusting layout below 768px width to fit contents within viewport without overlap  */
+
 @media screen and (max-width: 768px) {
-  /* Further adjustments to size as screen gets smaller*/
-  #cheatsheet {
-    max-width: 38rem;
-    max-height: 30rem;
+  html {
+    min-width: 100vw;
   }
 
-  /* Further adjustments */
-  #prework,
-  #landing-page,
-  #refactor {
-    max-width: 30rem;
-    max-height: 25rem;
+  #root {
+    min-width: 100vw;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    margin-left: 1rem;
+  }
+
+  input, textarea {
+    min-width: 15rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  textarea {
+    height: 10rem
+  }
+
+  h1 {
+    margin-left: 2.5rem;
+  }
+
+  body {
+    width: 100%;
+  }
+  
+  main {
+    min-width: 100vw;
+  }
+
+  .main-container .container .image img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  html {
+    width: 100%;
+  }
+  
+  #root {
+    min-width: 100vw;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    margin-left: 3.5rem;
+  }
+
+  .mb-3 {
+    flex-direction: column;
+  }
+
+  input, textarea {
+    min-width: 15rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  textarea {
+    height: 10rem
+  }
+
+  .media-icons {
+    height: 2rem;
+  }
+
+  h1 {
+    margin-left: 1rem;
+  }
+
+  body {
+    width: 100%;
+  }
+  
+  main {
+    width: 100%;
   }
 }
