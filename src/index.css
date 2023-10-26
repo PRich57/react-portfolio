@@ -12,6 +12,64 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --light-font-color: #af9cd4;
+  --blueColor: #b089f9;
+  --pinkColor: #f32a8f;
+  --headingColor: rgb(107, 110, 204);
+}
+html {
+  max-width: 100%;
+  max-height: 100%;
+}
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#root {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 8rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  right: 10px;
+}
+nav button {
+  min-width: 15rem;
+  max-width: 15rem;
+  max-height: 4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav ul li {
+  text-decoration: underline;
+  list-style: none;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: 900;
+  margin-left: 5rem;
+  color: var(--headingColor);
 }
 
 a {
@@ -22,18 +80,18 @@ a {
 a:hover {
   color: #535bf2;
 }
+button {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -43,7 +101,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -53,6 +111,21 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+.media-icons:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+.media-icons {
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {
@@ -65,5 +138,100 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  /* Adjust padding for header */
+  header {
+    padding: 3rem;
+  }
+
+  /* Adjust h1 margin top to fit nav bar and change font */
+  h1 {
+    margin-top: 5rem;
+    font-size: 6rem;
+  }
+
+  /* Fix nav to top of page */
+  nav {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Adjust opacity of nav bar and make flex container to alter layout */
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    background-color: black;
+    background-size: cover;
+    opacity: 70%;
+  }
+
+  /* Change flex direction for main and article */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Adjust padding of article at this size so the text field isn't too narrow */
+  article {
+    padding: 5rem;
+  }
+
+  /* Fix alignment of projects class */
+  .projects {
+    align-items: center;
+  }
+
+  /* Remove hover filter from project images now that devices may be touch screen */
+  .projects img {
+    filter: none;
+  }
+
+  /* Special sizing for cheatsheet project */
+  #cheatsheet {
+    max-width: 40rem;
+    max-height: 30rem;
+  }
+
+  /* Fix sizing for project images now that viewport size is reduced */
+  #prework,
+  #landing-page,
+  #refactor {
+    max-width: 40rem;
+    max-height: 35rem;
+  }
+
+  /* Adjust size of media icons as screen gets smaller */
+  .media-icons {
+    max-width: 7rem;
+  }
+
+  /* Add padding to right because footer becomes off center at this size */
+  footer {
+    padding-right: 2rem;
+  }
+}
+
+/* Begin adjusting layout below 768px width to fit contents within viewport without overlap  */
+@media screen and (max-width: 768px) {
+  /* Further adjustments to size as screen gets smaller*/
+  #cheatsheet {
+    max-width: 38rem;
+    max-height: 30rem;
+  }
+
+  /* Further adjustments */
+  #prework,
+  #landing-page,
+  #refactor {
+    max-width: 30rem;
+    max-height: 25rem;
   }
 }

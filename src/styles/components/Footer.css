@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  width: 10vw;
+  position: absolute;
+  margin: 1rem;
+  left: 1%;
+  bottom: 4%;
+}
+
+span[data-info]:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  left: 95px;
+  bottom: 17px;
+  min-width: max-content;
+  border-radius: 15px;
+  background-color: white;
+  padding: 12px;
+  color: var(--navy);
+  font-size: 1rem;
+  z-index: 1;
+  box-shadow: 3px 3px 7px var(--white);
+}
+
+span[data-info] {
+  position: relative;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.media-icons {
+  max-width: 5rem;
+  max-height: 3rem;
+  padding: 10px;
+  padding-top: 0px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 0vh;
+    bottom: 0;
+  }
+}

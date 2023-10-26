@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/components/Button.scss';
+import '../index.css';
 
 function Button({ content, icon = '', color = 'blue' }) {
   return (
