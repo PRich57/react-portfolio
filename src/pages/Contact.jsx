@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { Form, Button, Toast } from 'react-bootstrap';
 
@@ -7,6 +7,19 @@ function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [notValid, setNotValid] = useState(false);
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSuccessMessage(false);
+      setNotValid(false);
+    }, 3000)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  });
 
   const form = useRef();
 
@@ -21,20 +34,22 @@ function ContactForm() {
 
     if (!name || !email || !message) {
       setNotValid(true);
+      setShowSuccessMessage(false);
       return;
     }
 
     emailjs.sendForm('service_d1wsx7u', 'template_vmxvdqx', form.current, 'vXXRxcn4FhP4BEz55')
       .then((result) => {
-        <Toast className='contactInput container success' variant='info' color='green'>
-          Message sent!
-          </Toast>
-          console.log(result);
+        console.log(result);
         resetTextInput();
         setNotValid(false);
+        setShowSuccessMessage(true);
       }, (err) => {
         console.log(err.text);
+        setShowSuccessMessage(false);
       });
+
+    
   };
 
   const handleChange = (setter) => (e) => {
@@ -83,8 +98,13 @@ function ContactForm() {
           />
         </Form.Group>
         {notValid && (
-          <Toast className='contactInput container toast' variant='info'>
+          <Toast className='contactInput container toastF' variant='info'>
             Please fill out all input fields before sending.
+          </Toast>
+        )}
+        {showSuccessMessage && (
+          <Toast className='contactInput container toastS' variant='success'>
+            Your message has been sent successfully!
           </Toast>
         )}
         <Button className='submitBtn' type='submit'>

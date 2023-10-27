@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --light-font-color: #af9cd4;
-  --blueColor: #b089f9;
+  --blueColor: #5900ff;
   --pinkColor: #f32a8f;
   --headingColor: rgb(107, 110, 204);
 }
@@ -82,10 +82,11 @@ nav ul li {
 
 h1 {
   font-size: 5rem;
-  line-height: 1.1;
+  line-height: 1;
   font-weight: 900;
   margin-left: 5rem;
-  color: var(--headingColor);
+  color: var(--blueColor);
+  margin-bottom: 0;
 }
 
 h2 {
@@ -124,7 +125,7 @@ button:focus-visible {
   /* box-shadow: 2px 1px 1px rgba(255, 255, 255, 0.224); */
   text-align: center;
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, .7);
+  /* background-color: rgba(0, 0, 0, .7); */
   border-radius: 2rem;
   padding: 3rem;
   /* border: 1px solid rgba(255, 255, 255, 0.247); */
@@ -132,8 +133,10 @@ button:focus-visible {
 
 .main-container .container .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column-reverse;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .main-container .container .image img {
@@ -161,12 +164,14 @@ p {
 /* Set flex container for the projects */
 .projects {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 2rem;
+  width: 100%;
 }
 
 .projects img {
-  width: 35rem;
+  width: 100%;
   height: 22rem;
   margin-bottom: 2rem;
   border-radius: 1rem 1rem 0 0;
@@ -193,13 +198,15 @@ p {
 
 .card-icons:hover {
   scale: 1.2;
+  transition: 0.4s ease-in-out;
 }
 
 div.card {
-  filter: grayscale(60%);
+  filter: grayscale(80%);
   border: 1px solid rgba(255, 255, 255, 0.276);
   border-radius: 1rem;
   margin: 1rem;
+  transition: 0.4s ease-in-out;
 }
 
 div.card:hover {
@@ -207,12 +214,6 @@ div.card:hover {
   box-shadow: 1px 3px 3px #646cff;
   transition: 0.4s ease-in-out;
 }
-
-/* img:hover { 
-  filter: none;
-  box-shadow: 4px 4px 8px var(--white);
-  transition: 0.4s ease-in-out;
-} */
 
 .resume img {
   max-width: 90%;
@@ -258,11 +259,20 @@ textarea {
   margin: .5rem 0;
 }
 
+.toastS {
+  color: green;
+}
+
 .submitBtn {
   border: 1px solid rgba(255, 255, 255, 0.324);
   width: 8rem;
   height: 3rem;
   margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  border: 1px solid #646cff;
+  transition: 0.4s ease-in-out;
 }
 
 .media-icons {
@@ -272,6 +282,7 @@ textarea {
 
 .media-icons:hover {
   transform: scale(1.2);
+  transition: 0.4s ease-in-out;
 }
 
 .media-icons .spotify {
@@ -280,6 +291,11 @@ textarea {
 
 @media screen and (max-width: 1580px) {
   .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
     display: flex;
     flex-direction: column;
   }
@@ -340,6 +356,9 @@ textarea {
   #root {
     min-width: 100%;
   }
+  .main-container {
+    width: 100%
+  }
 
   header {
     display: flex;
@@ -363,6 +382,14 @@ textarea {
 
   .projects {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  div.card {
+    min-width: 22rem;
+  }
+  div.card p {
+    font-size: 1rem;
+    margin: 1rem;
   }
 
   textarea {
@@ -430,6 +457,10 @@ textarea {
   
   main {
     width: 100%;
+  }
+
+  .footer {
+    flex-direction: row;
   }
 }
 
