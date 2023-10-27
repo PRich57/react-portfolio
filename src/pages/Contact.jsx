@@ -1,107 +1,95 @@
-import React from 'react';
-import { useRef, useState } from React;
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Form, Button, Alert, Toast } from 'react-bootstrap';
+import { Form, Button, Toast } from 'react-bootstrap';
 
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [notValid, setValid] = useState(false);
+  const [notValid, setNotValid] = useState(false);
+
+  const form = useRef();
 
   const resetTextInput = () => {
     setName('');
     setEmail('');
     setMessage('');
-    setValid(false);
   }
-  const form = useRef();
-  
+
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!name || !email || !message) {
+      setNotValid(true);
+      return;
+    }
+
     emailjs.sendForm('service_d1wsx7u', 'template_tbo14vq', form.current, 'vXXRxcn4FhP4BEz55')
-    .then((result) => {
-      console.log(result.text);
-      resetTextInput();
-    }, (err) => {
-      console.log(err.text);
-    });
+      .then((result) => {
+        console.log(result.text);
+        resetTextInput();
+        setNotValid(false);
+      }, (err) => {
+        console.log(err.text);
+      });
   };
 
-  const nameSubmit = (e) => {
-    setName(e.target.value)
-    if (name) {
-      setValid(false)
-    }
-  }
-
-  const emailSubmit = (e) => {
-    setEmail(e.target.value) 
-    if (email) {
-      setValid(false)
-    }
-  }
-
-  const messageSubmit = (e) => {
-    setMessage(e.target.value)
-    if (message) {
-      setValid(false)
-    }
-  }
-
-  const validateEntry = (e) => {
+  const handleChange = (setter) => (e) => {
+    setter(e.target.value);
     if (!e.target.value) {
-      setValid(true)
+      setNotValid(true);
+    } else {
+      setNotValid(false);
     }
   }
 
-  return ( 
-  <>
-    <Form 
-      ref={form} 
-      onSubmit={sendEmail} 
-      className='d-flex lg-col-6 flex-column align-items-space-around'>
-      <Form.Group 
-        className="mb-3" 
-        controlId="Form.ControlInput1">
-        <Form.Label>Name:</Form.Label>
-        <Form.Control 
-          type="text" 
-          placeholder="Enter your name" 
-          name='user_name'
-          className='contactInput'
-          value={name}
-          onChange={nameSubmit}
-        />
-      </Form.Group>
-      <Form.Group 
-        className="mb-3" 
-        controlId="Form.ControlInput2">
-        <Form.Label>Email address:</Form.Label>
-        <Form.Control 
-          type="email" 
-          placeholder="name@example.com" 
-          name='user_email'
-          className='contactInput'
-          value={email}
-          onChange={emailSubmit}
-        />
-      </Form.Group>
-      <Form.Group 
-        className="mb-3" 
-        controlId="Form.ControlTextarea1">
-        <Form.Label>Message:</Form.Label>
-        <Form.Control 
-          as="textarea" 
-          rows={5} 
-          name='message'
-          type=''
-        />
-      </Form.Group>
-    </Form>
-    <h2>Contact</h2>
-  </>
+  return (
+    <>
+      <Form ref={form} onSubmit={sendEmail} className='d-flex lg-col-6 flex-column align-items-space-around'>
+        <Form.Group className="mb-3" controlId="Form.ControlInput1">
+          <Form.Label>Name:</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your name"
+            name='user_name'
+            className='contactInput'
+            value={name}
+            onChange={handleChange(setName)}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="Form.ControlInput2">
+          <Form.Label>Email address:</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="name@example.com"
+            name='user_email'
+            className='contactInput'
+            value={email}
+            onChange={handleChange(setEmail)}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="Form.ControlTextarea1">
+          <Form.Label>Message:</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={5}
+            name='message'
+            className='contactInput'
+            value={message}
+            onChange={handleChange(setMessage)}
+          />
+        </Form.Group>
+        {notValid && (
+          <Toast className='contactInput container toast' variant='info'>
+            Please fill out all input fields before sending.
+          </Toast>
+        )}
+        <Button className='submitBtn' type='submit'>
+          Send
+        </Button>
+      </Form>
+      <h2>Contact</h2>
+    </>
   );
 }
 

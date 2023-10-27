@@ -50,9 +50,9 @@ function Starter() {
           omitDeletionAnimation={false}
         />
       </div>
-      <div className="image">
+      {/* <div className="image">
         <img src="../src/assets/linkedin_profile_pic.jpg" alt="Picture of Pete" />
-      </div>
+      </div> */}
     </>
   );
 }

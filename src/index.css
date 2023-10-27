@@ -89,7 +89,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--headingColor);
 }
 
@@ -119,8 +119,8 @@ button:focus-visible {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  min-height: 60vh;
+  width: 75vw;
+  min-height: 50vh;
   /* box-shadow: 2px 1px 1px rgba(255, 255, 255, 0.224); */
   text-align: center;
   font-size: 2rem;
@@ -134,17 +134,87 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
-
 }
 
 .main-container .container .image img {
-  height: 25rem;
-  width: 25rem;
+  height: 24rem;
+  width: 24rem;
   border-radius: 2rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
   line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+/* Set flex container for the projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.projects img {
+  width: 35rem;
+  height: 22rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+/* h3 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+} */
+
+/* Project Cards */
+.main-container a span[data-info]:hover::after {
+  bottom: -32px;
+  left: -8px;
+}
+
+.main-container p {
+  font-size: 1.2rem;
+}
+
+.card-icons {
+  margin: 1rem 2rem;
+}
+
+.card-icons:hover {
+  scale: 1.2;
+}
+
+div.card {
+  filter: grayscale(90%);
+  border: 1px solid rgba(255, 255, 255, 0.276);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+div.card:hover {
+  filter: none;
+  transition: 0.4s ease-in-out;
+}
+
+/* img:hover { 
+  filter: none;
+  box-shadow: 4px 4px 8px var(--white);
+  transition: 0.4s ease-in-out;
+} */
+
+.resume img {
+  max-width: 90%;
 }
 
 .footer {
@@ -176,29 +246,65 @@ input, textarea {
 }
 
 textarea {
-  height: 10rem
+  height: 10rem;
+  padding-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.toast {
+  font-size: 1rem;
+  color: red;
+  margin: .5rem 0;
+}
+
+.submitBtn {
+  border: 1px solid rgba(255, 255, 255, 0.324);
+  width: 8rem;
+  height: 3rem;
+  margin-top: 1rem;
 }
 
 .media-icons {
   display: flex;
+  margin-left: 0;
 }
 
 .media-icons:hover {
   transform: scale(1.2);
 }
 
+.media-icons .spotify {
+  margin-left: 10rem;
+}
+
+@media screen and (max-width: 1580px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   html {
-    min-width: 100vw;
+    min-width: 100%;
   }
   
   #root {
-    min-width: 100vw;
+    min-width: 100%;
   }
   
   header {
     display: flex;
     flex-direction: column;
+  }
+
+  nav button {
+    font-size: 1.2rem;
+    min-width: 10rem;
+  }
+
+  label {
+    font-size: 1.5rem;
   }
   
   input, textarea {
@@ -209,7 +315,108 @@ textarea {
   }
 
   textarea {
-    height: 10rem
+    height: 10rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  body {
+    width: 100%;
+  }
+  
+  main {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    min-width: 100%;
+  }
+
+  #root {
+    min-width: 100%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+  }
+  
+  label {
+    font-size: 1.5rem;
+  }
+
+  input, textarea {
+    min-width: 13rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  textarea {
+    height: 6rem
+  }
+
+  h1 {
+    margin-left: 2.5rem;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  body {
+    width: 100%;
+  }
+  
+  main {
+    min-width: 110%;
+  }
+
+  .main-container .container .image img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    min-width: 100%;
+  }
+  
+  #root {
+    min-width: 100%;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+  
+  input, textarea {
+    min-width: 10rem;
+    height: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  textarea {
+    height: 4rem;
   }
 
   h1 {
@@ -225,60 +432,13 @@ textarea {
   }
 }
 
-
-@media screen and (max-width: 768px) {
-  html {
-    min-width: 100vw;
-  }
-
-  #root {
-    min-width: 100vw;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: stretch;
-    margin-left: 1rem;
-  }
-
-  input, textarea {
-    min-width: 15rem;
-    height: 2rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  }
-
-  textarea {
-    height: 10rem
-  }
-
-  h1 {
-    margin-left: 2.5rem;
-  }
-
-  body {
-    width: 100%;
-  }
-  
-  main {
-    min-width: 100vw;
-  }
-
-  .main-container .container .image img {
-    width: 15rem;
-    height: 15rem;
-  }
-}
-
 @media screen and (max-width: 508px) {
   html {
     width: 100%;
   }
   
   #root {
-    min-width: 100vw;
+    min-width: 100%;
   }
   
   header {
@@ -287,21 +447,26 @@ textarea {
     width: 100%;
     align-items: stretch;
     margin-left: 3.5rem;
+    margin-bottom: 0rem;
   }
 
   .mb-3 {
     flex-direction: column;
   }
 
+  label {
+    margin: .7rem;
+  }
+
   input, textarea {
-    min-width: 15rem;
+    min-width: 12rem;
     height: 2rem;
     margin-left: 2rem;
-    margin-top: 1rem;
+    margin-top: .4rem;
   }
 
   textarea {
-    height: 10rem
+    height: 4rem
   }
 
   .media-icons {
@@ -310,6 +475,11 @@ textarea {
 
   h1 {
     margin-left: 1rem;
+  }
+
+  h2 {
+    padding: 0;
+    margin-bottom: 2rem;
   }
 
   body {

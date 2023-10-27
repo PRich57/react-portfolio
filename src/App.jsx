@@ -14,7 +14,7 @@ function App() {
         <Navigation />
       </header>
       <main>
-        <div className="main-container">
+        <div className="main-container" >
           <div className="container">
             <div className="content">
               <Outlet />  
