@@ -169,7 +169,7 @@ p {
   width: 35rem;
   height: 22rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 /* h3 {
@@ -196,7 +196,7 @@ p {
 }
 
 div.card {
-  filter: grayscale(90%);
+  filter: grayscale(60%);
   border: 1px solid rgba(255, 255, 255, 0.276);
   border-radius: 1rem;
   margin: 1rem;
@@ -204,6 +204,7 @@ div.card {
 
 div.card:hover {
   filter: none;
+  box-shadow: 1px 3px 3px #646cff;
   transition: 0.4s ease-in-out;
 }
 
