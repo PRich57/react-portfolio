@@ -24,9 +24,12 @@ function ContactForm() {
       return;
     }
 
-    emailjs.sendForm('service_d1wsx7u', 'template_tbo14vq', form.current, 'vXXRxcn4FhP4BEz55')
+    emailjs.sendForm('service_d1wsx7u', 'template_vmxvdqx', form.current, 'vXXRxcn4FhP4BEz55')
       .then((result) => {
-        console.log(result.text);
+        <Toast className='contactInput container success' variant='info' color='green'>
+          Message sent!
+          </Toast>
+          console.log(result);
         resetTextInput();
         setNotValid(false);
       }, (err) => {
@@ -51,7 +54,7 @@ function ContactForm() {
           <Form.Control
             type="text"
             placeholder="Enter your name"
-            name='user_name'
+            name='from_name'
             className='contactInput'
             value={name}
             onChange={handleChange(setName)}
@@ -62,7 +65,7 @@ function ContactForm() {
           <Form.Control
             type="email"
             placeholder="name@example.com"
-            name='user_email'
+            name='reply_to'
             className='contactInput'
             value={email}
             onChange={handleChange(setEmail)}
