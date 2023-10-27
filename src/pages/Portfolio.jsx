@@ -1,65 +1,9 @@
 import Card from 'react-bootstrap/Card';
-import { Github, Window } from 'react-bootstrap-icons'
+import { Github, Window } from 'react-bootstrap-icons';
+import "../styles/components/Projects.css";
 
-// export default function ErrorPage() {
-//   const error = useRouteError();
-//   console.error(error);
 
-  // return (
-  //   <>
-  //     <article className="projects">
-  //       <a href="https://dev-row-records-63d750921ea0.herokuapp.com/" target="_blank">
-  //         <img
-  //           src="../src/assets/dev-row-records.png"
-  //           alt="Screenshot of Dev Row Records project"
-  //           id="dev-row-records"
-  //         />
-  //         <h3>Dev Row Records</h3>
-  //       </a>
-  //       <a href="https://ljkahn.github.io/videoGameProj/" target="_blank">
-  //         <img
-  //         src="../src/assets/gameSeekersScreenshot.png"
-  //         alt="Screenshot of Game Seekers project"
-  //         id="game-seekers"
-  //       />
-  //         <h3>Game Seekers</h3>
-  //       </a>
-  //       <a href="https://github.com/PRich57/weather-dashboard">
-  //         <img
-  //           src="../src/assets/weather-dashboard-screenshot.png"
-  //           alt="Image of weather dashboard"
-  //           id="weather-dashboard"
-  //         />
-  //         <h3>Weather Dashboard</h3>
-  //       </a>
-  //       <a
-  //         href="https://lit-eyrie-49322-e0487ec15df8.herokuapp.com/notes"
-  //         target="_blank"
-  //       >
-  //         <img
-  //           src="../src/assets/note-taker.png"
-  //           alt="Image of note taker app"
-  //           id="note-taker"
-  //         />
-  //         <h3>Note Taker</h3>
-  //       </a>
-  //       <a
-  //         href="https://prich57.github.io/website-refactor/"
-  //         target="_blank"
-  //       >
-  //         <img
-  //           src="../src/assets/website_refactor_screenshot.png"
-  //           alt="Image of website refactor site"
-  //           id="refactor"
-  //         />
-  //         <h3>Website Refactor</h3>
-  //       </a>
-  //     </article>
-  // </>
-  // );
-  
-  
-  function Projects() {
+function Projects() {
     return (
     <>
     <div className="projects">

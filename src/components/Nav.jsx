@@ -21,7 +21,7 @@ const MyNavbar = () => {
               <Button content="About Me &nbsp;" icon={<HiUser />} />
             </NavLink>
             <NavLink to="portfolio" className="nav-link" onClick={() => setExpanded(false)}>
-              <Button content='Portfolio &nbsp;' icon={<HiOutlineCodeBracketSquare />} />
+              <Button content='Projects &nbsp;' icon={<HiOutlineCodeBracketSquare />} />
             </NavLink>
             <NavLink to="contact" className="nav-link" onClick={() => setExpanded(false)}>
               <Button content='Contact  &nbsp;' icon={<HiEnvelope />} />

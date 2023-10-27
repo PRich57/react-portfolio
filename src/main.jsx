@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 import ErrorPage from "./pages/ErrorPage";
-import Starter from "./pages/Starter";
+// import Starter from "./pages/Starter";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact"
 import AboutMe from "./pages/AboutMe";

@@ -1,10 +1,25 @@
-footer {
+/* Footer */
+.footer {
   display: flex;
-  width: 10vw;
-  position: absolute;
-  margin: 1rem;
-  left: 1%;
-  bottom: 4%;
+  flex-direction: column;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+.media-icons {
+  display: flex;
+  margin-left: 0px;
+  max-width: 5rem;
+  max-height: 3rem;
+  padding: 10px;
+  padding-top: 0px;
+  margin: 10px;
+}
+
+.media-icons:hover {
+  transform: scale(1.2);
+  transition: 0.4s ease-in-out;
 }
 
 span[data-info]:hover::after {
@@ -16,7 +31,7 @@ span[data-info]:hover::after {
   border-radius: 15px;
   background-color: white;
   padding: 12px;
-  color: var(--navy);
+  color: var(--blueColor);
   font-size: 1rem;
   z-index: 1;
   box-shadow: 3px 3px 7px var(--white);
@@ -28,21 +43,10 @@ span[data-info] {
   cursor: pointer;
 }
 
-.media-icons {
-  max-width: 5rem;
-  max-height: 3rem;
-  padding: 10px;
-  padding-top: 0px;
-  margin: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  footer {
-    height: 0vh;
-    bottom: 0;
+@media screen and (max-width: 580px) {
+  .media-icons {
+    max-width: 3rem;
+    margin: 5px;
+    margin-left: 0px;
   }
 }
-
-
-
-

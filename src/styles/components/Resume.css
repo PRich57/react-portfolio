@@ -1,107 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
-
-:root {
-  font-family: 'Raleway', sans-serif;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  --light-font-color: #af9cd4;
-  --blueColor: #5900ff;
-  --pinkColor: #f32a8f;
-  --headingColor: rgb(107, 110, 204);
+/* Resume */
+.resume img {
+  max-width: 90%;
 }
 
-html {
-  max-width: 100%;
-  max-height: 100%;
+.resume img:hover {
+  border: 2px solid #646cff;
+  transition: 0.1s ease;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
-  max-width: 100%;
-  max-height: 100%;
+.resume {
+  margin-bottom: 10rem;
 }
 
-#root {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@media screen and (max-width: 1580px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
 
-main {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-/* App  */
-h2 {
-  font-size: 3rem;
-  color: var(--headingColor);
-}
-
-button {
-  color: white;
-  text-transform: uppercase;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: rgba(0, 0, 0, .001);
-  cursor: pointer;
-  transition: border-color 0.45s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  width: 75vw;
-  min-height: 50vh;
-  text-align: center;
-  font-size: 2rem;
-  border-radius: 2rem;
-  padding: 3rem;
-}
-
-.main-container .container .content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column-reverse;
-  background-color: rgba(0, 0, 0, 0.263);
-  border-radius: 2rem;
-}
-
-.main-container .container .image img {
-  height: 24rem;
-  width: 24rem;
-  border-radius: 2rem;
+  header {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -170,6 +90,11 @@ button:focus-visible {
     align-items: stretch;
     margin-left: 1rem;
     margin-bottom: 0rem;
+  }
+
+  .resume {
+    margin-bottom: none;
+    min-width: 20rem;
   }
   
   label {
@@ -275,6 +200,7 @@ button:focus-visible {
 @media screen and (max-width: 508px) {
   html {
     width: 100%;
+    min-height: none;
   }
   
   #root {
