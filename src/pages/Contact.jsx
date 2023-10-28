@@ -39,7 +39,7 @@ function ContactForm() {
       return;
     }
 
-    emailjs.sendForm('service_d1wsx7u', 'template_vmxvdqx', form.current, 'vXXRxcn4FhP4BEz55')
+    emailjs.sendForm(process.env.EJS_SERVICE, process.env.EJS_TEMPLATE, form.current, process.env.EJS_PUBKEY)
       .then((result) => {
         console.log(result);
         resetTextInput();
