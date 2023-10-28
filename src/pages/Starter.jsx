@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../styles/index.css";
 import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 

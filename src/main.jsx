@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./index.css";
+import "./styles/index.css";
 
 import ErrorPage from "./pages/ErrorPage";
 // import Starter from "./pages/Starter";
@@ -21,10 +21,10 @@ const router = createBrowserRouter([
         index: true,
         element: <AboutMe />
       },
-      // {
-      //   path: 'home',
-      //   element: <Starter />
-      // },
+      {
+        path: 'home',
+        element: <AboutMe />
+      },
       {
         path: 'about-me',
         element: <AboutMe />,

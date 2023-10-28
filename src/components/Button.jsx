@@ -1,9 +1,9 @@
 import React from "react";
-import '../index.css';
+import '../styles/index.css';
 
-function Button({ content, icon = '', color = 'blue' }) {
+function Button({ content, icon = '', color = 'blue', className }) {
   return (
-    <button className={`${color}`}>
+    <button className={`${color} ${className}`}>
       {content} {icon}
     </button> 
   )

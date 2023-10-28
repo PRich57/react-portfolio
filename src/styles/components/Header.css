@@ -23,8 +23,11 @@ nav button {
   font-size: 1.5rem;
 }
 
+.active-btn {
+  border: 2px solid var(--blueColor);
+}
+
 nav ul li {
-  text-decoration: underline;
   list-style: none;
   background-color: rgba(0, 0, 0, 0.001);
 }
