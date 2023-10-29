@@ -12,6 +12,12 @@
   margin-bottom: 10rem;
 }
 
+h6 {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
 @media screen and (max-width: 1580px) {
   .about {
     display: flex;

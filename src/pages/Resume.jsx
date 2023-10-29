@@ -1,6 +1,7 @@
 import pdf from "../../src/assets/resume.pdf";
 import resume from "../../src/assets/resume.png";
 import "../styles/components/Resume.css";
+import { ArrowDown } from "react-bootstrap-icons"
 
 export default function Resume() {
   return (
@@ -10,6 +11,7 @@ export default function Resume() {
           <img src={resume} alt="Pete's Resume" />
         </a>
       </div>
+    <h6>Click to download <ArrowDown/></h6>
       <h2>Resume</h2>
     </>
   );
