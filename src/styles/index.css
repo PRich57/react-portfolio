@@ -42,6 +42,10 @@ body {
   padding: 0;
 }
 
+#error-page {
+  text-align: center;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -81,8 +85,8 @@ button:focus-visible {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  width: 75vw;
-  min-height: 50vh;
+  width: 75%;
+  min-height: 50%;
   text-align: center;
   font-size: 2rem;
   border-radius: 2rem;
@@ -113,7 +117,7 @@ button:focus-visible {
     min-width: 100%;
   }
   /* Header */
-  header {
+  /* header {
     display: flex;
     flex-direction: column;
   }
@@ -140,26 +144,26 @@ button:focus-visible {
 
   h1 {
     font-size: 4rem;
-  }
+  } */
 
   body {
-    width: 100%;
+    max-width: 100%;
   }
   
   main {
-    width: 110%;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   html {
-    min-width: 100%;
+    max-width: 100%;
   }
 
   #root {
-    min-width: 100%;
+    max-width: 100%;
   }
-  .main-container {
+  /* .main-container {
     width: 100%
   }
 
@@ -201,36 +205,36 @@ button:focus-visible {
 
   h1 {
     margin-left: 2.5rem;
-  }
+  } */
 
   h2 {
     margin-bottom: 0;
   }
 
   body {
-    width: 100%;
+    max-width: 100%;
   }
   
   main {
-    min-width: 110%;
+    max-width: 100%;
   }
 
-  .main-container .container .image img {
+  /* .main-container .container .image img {
     width: 15rem;
     height: 15rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 580px) {
   html {
-    min-width: 100%;
+    max-width: 100%;
   }
   
   #root {
-    min-width: 100%;
+    max-width: 100%;
   }
   
-  header {
+  /* header {
     display: flex;
     flex-direction: column;
   }
@@ -261,17 +265,17 @@ button:focus-visible {
 
   h1 {
     font-size: 4rem;
-  }
+  } */
 
   body {
-    width: 100%;
+    max-width: 100%;
   }
   
   main {
-    width: 100%;
+    max-width: 100%;
   }
 }
-
+/* 
 @media screen and (max-width: 508px) {
   html {
     width: 100%;
@@ -329,4 +333,4 @@ button:focus-visible {
   main {
     width: 100%;
   }
-}
+} */

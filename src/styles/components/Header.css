@@ -42,10 +42,10 @@ h1 {
 }
 
 @media screen and (max-width: 1580px) {
-  .about {
+  /* .about {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   header {
     display: flex;
@@ -54,13 +54,13 @@ h1 {
 }
 
 @media screen and (max-width: 1280px) {
-  html {
+  /* html {
     min-width: 100%;
   }
   
   #root {
     min-width: 100%;
-  }
+  } */
   /* Header */
   header {
     display: flex;
@@ -71,7 +71,7 @@ h1 {
     font-size: 1.2rem;
     min-width: 10rem;
   }
-
+/* 
   label {
     font-size: 1.5rem;
   }
@@ -85,23 +85,23 @@ h1 {
 
   textarea {
     height: 10rem;
-  }
+  } */
 
   h1 {
     font-size: 4rem;
   }
-
+/* 
   body {
     width: 100%;
   }
   
   main {
     width: 110%;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
-  html {
+  /* html {
     min-width: 100%;
   }
 
@@ -110,7 +110,7 @@ h1 {
   }
   .main-container {
     width: 100%
-  }
+  } */
 
   header {
     display: flex;
@@ -120,7 +120,7 @@ h1 {
     margin-left: 1rem;
     margin-bottom: 0rem;
   }
-  
+/*   
   label {
     font-size: 1.5rem;
   }
@@ -146,12 +146,12 @@ h1 {
 
   textarea {
     height: 6rem
-  }
+  } */
 
   h1 {
     margin-left: 2.5rem;
   }
-
+/* 
   h2 {
     margin-bottom: 0;
   }
@@ -167,23 +167,23 @@ h1 {
   .main-container .container .image img {
     width: 15rem;
     height: 15rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 580px) {
-  html {
+  /* html {
     min-width: 100%;
   }
   
   #root {
     min-width: 100%;
-  }
+  } */
   
   header {
     display: flex;
     flex-direction: column;
   }
-
+/* 
   div.card img {
 
     height: 14rem;
@@ -206,22 +206,22 @@ h1 {
 
   textarea {
     height: 4rem;
-  }
+  } */
 
   h1 {
     font-size: 4rem;
   }
-
+/* 
   body {
     width: 100%;
   }
   
   main {
     width: 100%;
-  }
+  } */
 }
 
-@media screen and (max-width: 508px) {
+/* @media screen and (max-width: 508px) {
   html {
     width: 100%;
   }
@@ -278,4 +278,4 @@ h1 {
   main {
     width: 100%;
   }
-}
+} */

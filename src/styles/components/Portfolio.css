@@ -47,7 +47,7 @@ div.card:hover {
 }
 
 @media screen and (max-width: 1580px) {
-  .about {
+  /* .about {
     display: flex;
     flex-direction: column;
   }
@@ -55,19 +55,19 @@ div.card:hover {
   header {
     display: flex;
     flex-direction: column;
-  }
+  } */
 }
 
 @media screen and (max-width: 1280px) {
-  html {
+  /* html {
     min-width: 100%;
   }
   
   #root {
     min-width: 100%;
-  }
+  } */
   /* Header */
-  header {
+  /* header {
     display: flex;
     flex-direction: column;
   }
@@ -102,11 +102,11 @@ div.card:hover {
   
   main {
     width: 110%;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
-  html {
+  /* html {
     min-width: 100%;
   }
 
@@ -135,7 +135,7 @@ div.card:hover {
     height: 2rem;
     margin-left: 2rem;
     margin-top: 1rem;
-  }
+  } */
 
   .projects {
     grid-template-columns: repeat(1, 1fr);
@@ -149,7 +149,7 @@ div.card:hover {
     margin: 1rem;
   }
 
-  textarea {
+  /* textarea {
     height: 6rem
   }
 
@@ -167,120 +167,9 @@ div.card:hover {
   
   main {
     min-width: 110%;
-  }
-
-  .main-container .container .image img {
-    width: 15rem;
-    height: 15rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 580px) {
-  html {
-    min-width: 100%;
-  }
-  
-  #root {
-    min-width: 100%;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-  }
 
-  div.card img {
-
-    height: 14rem;
-  }
-
-  div.card p {
-    font-size: .8rem;
-  }
-
-  label {
-    font-size: 1.5rem;
-  }
-  
-  input, textarea {
-    min-width: 10rem;
-    height: 2rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  }
-
-  textarea {
-    height: 4rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  body {
-    width: 100%;
-  }
-  
-  main {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 508px) {
-  html {
-    width: 100%;
-  }
-  
-  #root {
-    min-width: 100%;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: stretch;
-    margin-left: 3.5rem;
-    margin-bottom: 0rem;
-  }
-
-  .mb-3 {
-    flex-direction: column;
-  }
-
-  label {
-    margin: .7rem;
-  }
-
-  input, textarea {
-    min-width: 12rem;
-    height: 2rem;
-    margin-left: 2rem;
-    margin-top: .4rem;
-  }
-
-  textarea {
-    height: 4rem
-  }
-
-  .media-icons {
-    height: 2rem;
-  }
-
-  h1 {
-    margin-left: 1rem;
-  }
-
-  h2 {
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-
-  body {
-    width: 100%;
-  }
-  
-  main {
-    width: 100%;
-  }
 }
