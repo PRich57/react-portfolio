@@ -4,13 +4,17 @@ import { Form, Button, Toast } from 'react-bootstrap';
 import "../styles/components/Contact.css";
 
 function ContactForm() {
+  // Declare variables to get state of input fields
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  // Declare variable to determine whether input is valid
   const [notValid, setNotValid] = useState(false);
 
+  // Create way to display success message
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
+  // Use useEffect to make the success or invalid messages appear for 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSuccessMessage(false);
@@ -24,21 +28,25 @@ function ContactForm() {
 
   const form = useRef();
 
+  // Clear out user input from input fields
   const resetTextInput = () => {
     setName('');
     setEmail('');
     setMessage('');
   }
 
+  // Create sendEmail function
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Validation
     if (!name || !email || !message) {
       setNotValid(true);
       setShowSuccessMessage(false);
       return;
     }
 
+    // Use emailJS with .env protected keys
     emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_PUBKEY)
       .then((result) => {
         console.log(result);
@@ -49,10 +57,9 @@ function ContactForm() {
         console.log(err.text);
         setShowSuccessMessage(false);
       });
-
-    
   };
 
+  // Create function to handle alerting user about required input in input fields
   const handleChange = (setter) => (e) => {
     setter(e.target.value);
     if (!e.target.value) {

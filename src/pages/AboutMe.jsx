@@ -2,7 +2,6 @@ import { TypeAnimation } from 'react-type-animation';
 import "../styles/components/AboutMe.css";
 
 export default function AboutMe() {
-
   return (
     <>
       <div className="about">

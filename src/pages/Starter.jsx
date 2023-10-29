@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 function Starter() {
+  // useState to work with the TypeAnimation library
   const [fontSize, setFontSize] = useState('3rem');
   const [textColor, setTextColor] = useState('rgb(107, 110, 204)')
 
@@ -50,9 +51,6 @@ function Starter() {
           omitDeletionAnimation={false}
         />
       </div>
-      {/* <div className="image">
-        <img src="../src/assets/linkedin_profile_pic.jpg" alt="Picture of Pete" />
-      </div> */}
     </>
   );
 }

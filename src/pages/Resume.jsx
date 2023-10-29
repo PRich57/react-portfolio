@@ -11,7 +11,7 @@ export default function Resume() {
           <img src={resume} alt="Pete's Resume" />
         </a>
       </div>
-    <h6>Click to download <ArrowDown/></h6>
+      <h6>Click to download <ArrowDown/></h6>
       <h2>Resume</h2>
     </>
   );

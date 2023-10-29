@@ -5,6 +5,7 @@ import { HiUser, HiOutlineCodeBracketSquare, HiEnvelope, HiPaperClip } from 'rea
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const MyNavbar = () => {
+  // Use useState to highlight active tab with default to about-me
   const [activeTab, setActiveTab] = useState(localStorage.getItem("activeTab") || "about-me");
   const location = useLocation();
 
@@ -13,12 +14,16 @@ const MyNavbar = () => {
     const currentPath = location.pathname.substring(1)
     // Default to about me for initial load
     setActiveTab(currentPath || "about-me");
+    // Do this every time the location is updated
   }, [location]);
 
   useEffect(() => {
+    // Assign active tab key in local storage the value of the active tab
     localStorage.setItem("activeTab", activeTab);
+    // Do this every time the active tab is updated
   }, [activeTab]);
 
+  // Create function to call on tab clicks that sets the new active tab
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
