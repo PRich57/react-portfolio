@@ -127,50 +127,16 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    max-width: 100%;
-  }
-
-  #root {
-    max-width: 100%;
-  }
-
-  .main-container {
+  /* .main-container {
     max-width: 100%
-  }
+  } */
 
   h2 {
     margin-bottom: 0;
   }
 
-  body {
-    max-width: 100%;
-  }
-  
-  main {
-    max-width: 100%;
-  }
-
   .main-container .container .image img {
     width: 15rem;
     height: 15rem;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  html {
-    max-width: 100%;
-  }
-  
-  #root {
-    max-width: 100%;
-  }
-
-  body {
-    max-width: 100%;
-  }
-  
-  main {
-    max-width: 100%;
   }
 }

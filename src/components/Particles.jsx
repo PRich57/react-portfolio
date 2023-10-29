@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import { useCallback, useMemo } from "react";
+import React, { useCallback, useMemo } from "react";
 
 function ParticlesComponent() {
   const options = useMemo(() => {

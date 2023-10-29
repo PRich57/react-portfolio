@@ -66,10 +66,6 @@ div.card:hover {
     max-width: 100%;
   }
 
-  .main-container {
-    max-width: 100%;
-  }
-
   div.card {
     max-width: 15rem;
   }

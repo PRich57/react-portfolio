@@ -19,7 +19,8 @@ h6 {
 
 @media screen and (max-width: 768px) {
   .resume {
-    margin-bottom: none;
+    margin-bottom: 0;
     min-width: 20rem;
+    margin-left: 2rem;
   }
 }

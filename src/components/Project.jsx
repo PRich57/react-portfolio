@@ -2,6 +2,7 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import { Github, Window } from 'react-bootstrap-icons';
 
+// Create Project component to insert into the portfolio page
 const Project = ({ title, description, liveLink, repoLink, imgSrc }) => (
   <Card style={{ width: '35rem'}}>
     <Card.Img variant="top" src={imgSrc} />
