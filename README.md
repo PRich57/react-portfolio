@@ -4,9 +4,9 @@
 
 ## Description
 
-  Welcome to the Dev Row Records online music platform, where you can discover and support the talented artists represented by our record label. This platform provides an interactive and engaging experience for users to explore artists, albums, merchandise, and more.
+  Welcome to my portfolio! I'm Pete Richards, a Software Developer currently enrolled in the University of Denver's Coding Boot Camp. My portfolio provides a snapshot of my coding journey, skills, and experiences. It's built using React and serves as a guide to who I am as a developer.
 
-  To visit Dev Row Records click [here.](https://dev-row-records-63d750921ea0.herokuapp.com/)
+  To visit my Portfolio click [here!](#)
 
 ## Table of Contents
 
