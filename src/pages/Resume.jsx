@@ -1,5 +1,5 @@
-import pdf from "../../src/assets/resume.pdf";
-import resume from "../../src/assets/resume.png";
+import pdf from "../../public/assets/resume.pdf";
+import resume from "../../public/assets/resume.png";
 import "../styles/components/Resume.css";
 import { ArrowDown } from "react-bootstrap-icons"
 

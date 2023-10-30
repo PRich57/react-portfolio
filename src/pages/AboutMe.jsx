@@ -6,7 +6,7 @@ export default function AboutMe() {
     <>
       <div className="about">
         <div className="image">
-          <img src="../src/assets/linkedin_profile_pic.jpg" alt="Picture of Pete" />
+          <img src="../public/assets/linkedin_profile_pic.jpg" alt="Picture of Pete" />
         </div>
         <div className="aboutInfo">
           <p>
