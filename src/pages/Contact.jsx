@@ -47,8 +47,8 @@ function ContactForm() {
     }
 
     // Use emailJS with .env protected keys
-    emailjs.sendForm(import.meta.env.VITE_SERVICE, 
-      import.meta.env.VITE_TEMPLATE, 
+    emailjs.sendForm('service_d1wsx7u', 
+      'template_vmxvdqx', 
       form.current, 
       'vXXRxcn4FhP4BEz55')
       .then((result) => {
