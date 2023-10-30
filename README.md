@@ -6,7 +6,7 @@
 
   Welcome to my portfolio! I'm Pete Richards, a Software Developer currently enrolled in the University of Denver's Coding Boot Camp. My portfolio provides a snapshot of my coding journey, skills, and experiences. It's built using React and serves as a guide to who I am as a developer.
 
-  To visit my Portfolio click [here!](#)
+  To visit my portfolio click [here!](#)
 
 ## Table of Contents
 
