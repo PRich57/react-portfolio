@@ -25,7 +25,7 @@ export default function AboutMe() {
         </div>
       </div>
       <h2>
-        Checkout 
+        Check Out 
         <TypeAnimation 
           splitter={(str) => str.split(/(?=)/)}
           sequence={[
