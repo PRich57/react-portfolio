@@ -45,7 +45,7 @@ const MyNavbar = () => {
             <Button content='Contact  &nbsp;' icon={<HiEnvelope />} className={activeTab === "contact" ? "active-btn" : ""} />
           </NavLink>
           <NavLink to="resume" className="nav-link" onClick={() => handleTabClick("resume")}>
-            <Button content='Resume &nbsp;' icon={<HiPaperClip />} className={activeTab === "Resume" ? "active-btn" : ""} />
+            <Button content='Resume  &nbsp;' icon={<HiPaperClip />} className={activeTab === "resume" ? "active-btn" : ""} />
           </NavLink>
         </Nav>
       </Container>
