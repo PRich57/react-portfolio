@@ -47,7 +47,10 @@ function ContactForm() {
     }
 
     // Use emailJS with .env protected keys
-    emailjs.sendForm(import.meta.env.VITE_SERVICE, import.meta.env.VITE_TEMPLATE, form.current, import.meta.env.VITE_PUBKEY)
+    emailjs.sendForm(import.meta.env.VITE_SERVICE, 
+      import.meta.env.VITE_TEMPLATE, 
+      form.current, 
+      vXXRxcn4FhP4BEz55)
       .then((result) => {
         console.log(result);
         resetTextInput();
