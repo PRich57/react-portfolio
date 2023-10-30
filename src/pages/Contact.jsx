@@ -50,7 +50,7 @@ function ContactForm() {
     emailjs.sendForm(import.meta.env.VITE_SERVICE, 
       import.meta.env.VITE_TEMPLATE, 
       form.current, 
-      vXXRxcn4FhP4BEz55)
+      'vXXRxcn4FhP4BEz55')
       .then((result) => {
         console.log(result);
         resetTextInput();
