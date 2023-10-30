@@ -15,7 +15,6 @@
   - [Mock-Up](#mock-up)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Credits](#credits)
 
 ## Installation
 
