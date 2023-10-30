@@ -5,16 +5,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #3a3a3a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --light-font-color: #af9cd4;
+  --light-font-color: #d7c2ff;
   --blueColor: #5900ff;
-  --pinkColor: #f32a8f;
   --headingColor: rgb(107, 110, 204);
 }
 
@@ -53,7 +52,6 @@ main {
   height: 100%;
 }
 
-/* App  */
 h2 {
   font-size: 3rem;
   color: var(--headingColor);
@@ -98,7 +96,7 @@ button:focus-visible {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column-reverse;
-  background-color: rgba(0, 0, 0, 0.265);
+  background-color: rgba(0, 0, 0, 0.565);
   border-radius: 2rem;
 }
 
@@ -127,10 +125,6 @@ button:focus-visible {
 }
 
 @media screen and (max-width: 768px) {
-  /* .main-container {
-    max-width: 100%
-  } */
-
   h2 {
     margin-bottom: 0;
   }

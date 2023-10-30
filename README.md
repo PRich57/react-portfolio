@@ -1,8 +1,69 @@
-# React + Vite
+# Pete's React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![404 Badge](https://img.shields.io/badge/No_License_Chosen-red)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Welcome to the Dev Row Records online music platform, where you can discover and support the talented artists represented by our record label. This platform provides an interactive and engaging experience for users to explore artists, albums, merchandise, and more.
+
+  To visit Dev Row Records click [here.](https://dev-row-records-63d750921ea0.herokuapp.com/)
+
+## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Mock-Up](#mock-up)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Credits](#credits)
+
+## Installation
+
+  N/A
+
+## Usage
+
+  Follow the instructions below to navigate through Pete's Portfolio:
+
+  ##### Navigation
+  
+  - Easily navigate between my About Me, Portfolio, Contact, and Resume pages using the navigation bar at the top of the page 
+  - Your current location will always be highlighted in the navigation bar so you never have to wonder which page you're on
+  - If you look to the bottom left of any page you will also find links to my GitHub, LinkedIn, and Spotify accounts
+
+  ##### About Me
+
+  On the homepage, you'll find an 'About Me' section designed to give you a snapshot of who I am both as a developer and a person. This area features not only a brief summary of my coding journey, but also a recent photograph to offer a more personal glimpse into the person behind the code. As you explore the rest of my portfolio, I hope this introduction provides a meaningful context for the work and skills you'll encounter.
+
+  ##### Portfolio
+
+  - Click "Portfolio" in the navigation bar to be taken to the Portfolio page, where I highlight 6 of my projects.
+  - Scroll through my projects to view their respective screenshots, titles, descriptions and links to their live sites and GitHub repositories.
+
+  ##### Contact
+
+  - On the Contact page, you'll find a form with fields for Name, Email Address, and Message
+  - Each field must be filled out before submitting
+  - If the email address isn't properly formatted (Ex: example@email.com) the form cannot be submitted
+  - Upon submitting the information, a success or failure message will be displayed on the screen for 3 seconds
+  - If the success message appears, I will receive an email from you and will respond promptly
+  - If an error message appears, verify your information was entered correctly and try again
+
+  ##### Resume
+  
+  - The Resume page shows an image of my current resume
+  - To download a PDF version, simply click the image and a new browser tab will open where it can be downloaded
+
+## Mock-Up
+
+  The following video shows the application's design and functionality.
+
+  ![Image of Pete's Portfolio]()
+
+## License
+
+  N/A
+
+## Contributing
+
+  N/A

@@ -37,7 +37,7 @@ h1 {
   line-height: 1;
   font-weight: 900;
   margin-left: 5rem;
-  color: var(--blueColor);
+  color: var(--light-font-color);
   margin-bottom: 0;
 }
 
