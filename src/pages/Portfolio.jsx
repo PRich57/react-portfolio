@@ -4,6 +4,7 @@ import gameSeekers from '../../public/assets/gameSeekersScreenshot.png';
 import weatherDash from '../../public/assets/weather-dashboard-screenshot.png';
 import noteTaker from '../../public/assets/note-taker.png';
 import codeQuiz from '../../public/assets/code-quiz.png';
+import blurb from '../../public/assets/blurb.png';
 import wdScheduler from '../../public/assets/wdsScreenshot.png';
 import Project from '../components/Project';
 import "../styles/components/Portfolio.css";
@@ -11,6 +12,13 @@ import "../styles/components/Portfolio.css";
 function Projects() {
   // Create projectData array of objects to insert values for each project card
   const projectData = [
+    {
+      title: `Blurb: Social Media App`,
+      description: `Blurb is a dynamic and interactive microblogging platform that empowers users to share their thoughts, ideas, and stories in bite-sized messages called 'Blurbs.' With a character limit tailored for brevity, Blurb enables users to express themselves concisely, engaging in real-time conversations with a global community of like-minded individuals.`,
+      liveLink: `https://blurb4-web-6d7dbae39646.herokuapp.com/`,
+      repoLink: `https://github.com/ljkahn/Blurb`,
+      imgSrc: blurb
+    },
     {
       title: `Dev Row Records`,
       description: `Welcome to the Dev Row Records online music platform, where you can discover and support the talented artists represented by our record label. This platform provides an interactive and engaging experience for users to explore artists, albums, merchandise, and more.`,
@@ -38,13 +46,6 @@ function Projects() {
       liveLink: `https://lit-eyrie-49322-e0487ec15df8.herokuapp.com/notes`,
       repoLink: `https://github.com/PRich57/note-taker`,
       imgSrc: noteTaker
-    },
-    {
-      title: `Code Quiz`,
-      description: `Code assessments are a common and important part of the interview process and the creation of this quiz allowed us, as boot camp students, to understand what we may face during interviews. More importantly, it gave us a multifaceted problem that we had to break down into smaller parts, solve piece by piece, and then reassemble to create the final product.`,
-      liveLink: `https://prich57.github.io/code-quiz/`,
-      repoLink: `https://github.com/PRich57/code-quiz`,
-      imgSrc: codeQuiz
     },
     {
       title: `Work Day Scheduler`,
