@@ -1,11 +1,11 @@
 import React from 'react';
-import devRow from '../../public/assets/dev-row-records.png';
-import gameSeekers from '../../public/assets/gameSeekersScreenshot.png';
-import weatherDash from '../../public/assets/weather-dashboard-screenshot.png';
-import noteTaker from '../../public/assets/note-taker.png';
-import codeQuiz from '../../public/assets/code-quiz.png';
-import blurb from '../../public/assets/blurb.png';
-import wdScheduler from '../../public/assets/wdsScreenshot.png';
+import devRow from '/src/assets/dev-row-records.png';
+import gameSeekers from '/src/assets/gameSeekersScreenshot.png';
+import weatherDash from '/src/assets/weather-dashboard-screenshot.png';
+import noteTaker from '/src/assets/note-taker.png';
+import codeQuiz from '/src/assets/code-quiz.png';
+import blurb from '/src/assets/blurb.png';
+import wdScheduler from '/src/assets/wdsScreenshot.png';
 import Project from '../components/Project';
 import "../styles/components/Portfolio.css";
 

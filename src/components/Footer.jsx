@@ -15,11 +15,6 @@ function Footer() {
           <Linkedin className="media-icons" color="white" size={40} />
         </span>
       </a>
-      <a href="https://open.spotify.com/playlist/70ct0xfji0GgcjTrGHH2Tz" target='_blank'>
-        <span data-info="Visit my Spotify">
-          <Spotify className='media-icons' color='white' size={40} />
-        </span>
-      </a>
     </div>
   </footer>
   )

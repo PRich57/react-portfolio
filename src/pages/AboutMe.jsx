@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import "../styles/components/AboutMe.css";
-import profilePic from '../../public/assets/linkedin_profile_pic.jpg'
+import profilePic from '/src/assets/linkedin_profile_pic.jpg'
 
 export default function AboutMe() {
   return (
