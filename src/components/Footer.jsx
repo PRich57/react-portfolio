@@ -1,5 +1,5 @@
 import '../styles/components/Footer.css';
-import { Spotify, Linkedin, Github } from 'react-bootstrap-icons'
+import { Linkedin, Github } from 'react-bootstrap-icons'
 
 function Footer() {
   return (

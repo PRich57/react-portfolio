@@ -2,10 +2,7 @@ import React from 'react';
 import devRow from '/src/assets/dev-row-records.png';
 import gameSeekers from '/src/assets/gameSeekersScreenshot.png';
 import weatherDash from '/src/assets/weather-dashboard-screenshot.png';
-import noteTaker from '/src/assets/note-taker.png';
-import codeQuiz from '/src/assets/code-quiz.png';
 import blurb from '/src/assets/blurb.png';
-import wdScheduler from '/src/assets/wdsScreenshot.png';
 import Project from '../components/Project';
 import "../styles/components/Portfolio.css";
 
@@ -39,20 +36,6 @@ function Projects() {
       liveLink: `https://prich57.github.io/weather-dashboard/`,
       repoLink: `https://github.com/PRich57/weather-dashboard`,
       imgSrc: weatherDash
-    },
-    {
-      title: `Note Taker`,
-      description: `The Note Taker app is an intuitive and user-friendly application designed to help users organize their thoughts, ideas, and information in a seamless manner. Built with simplicity and efficiency in mind, this app provides a straightforward experience from the moment you open it.`,
-      liveLink: `https://lit-eyrie-49322-e0487ec15df8.herokuapp.com/notes`,
-      repoLink: `https://github.com/PRich57/note-taker`,
-      imgSrc: noteTaker
-    },
-    {
-      title: `Work Day Scheduler`,
-      description: `The purpose of the Work Day Schedular is to help users organize their work days with persistent storage. The schedular has time blocks for each hour from 9am to 5pm. Within each time block, users can type in tasks they have to accomplish, meetings they have to attend, or any other form of reminder to keep themselves organized.`,
-      liveLink: `https://prich57.github.io/work-day-schedular/`,
-      repoLink: `https://github.com/PRich57/work-day-schedular`,
-      imgSrc: wdScheduler
     },
   ]
 
