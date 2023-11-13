@@ -61,12 +61,19 @@ div.card:hover {
 }
 
 @media screen and (max-width: 580px) {
+  .main-container {
+    padding: 0;
+    max-width: 100%;
+  }
+  
   .projects {
     max-width: 100%;
+    padding: 0;
   }
 
   div.card {
-    max-width: 15rem;
+    max-width: 21rem;
+    margin: 1rem 0;
   }
 
   div.card img {

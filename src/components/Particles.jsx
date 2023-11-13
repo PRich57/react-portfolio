@@ -8,7 +8,7 @@ function ParticlesComponent() {
       autoPlay: true,
       background: {
         color: {
-          value: "#000",
+          value: "#030315",
         },
         image: "",
         position: "",
@@ -339,21 +339,21 @@ function ParticlesComponent() {
             height: 700,
           },
           limit: 0,
-          value: 100,
+          value: 20,
         },
         opacity: {
           random: {
             enable: true,
-            minimumValue: 0.3,
+            minimumValue: 0.2,
           },
           value: {
-            min: 0.3,
-            max: 0.8,
+            min: 0.1,
+            max: 0.7,
           },
           animation: {
             count: 0,
             enable: true,
-            speed: 0.9,
+            speed: 0.2,
             decay: 0,
             delay: 0,
             sync: false,
@@ -379,16 +379,16 @@ function ParticlesComponent() {
           close: true,
           fill: true,
           options: {},
-          type: "spiral",
+          type: "circle",
         },
         size: {
           random: {
             enable: true,
-            minimumValue: 100,
+            minimumValue: .3,
           },
           value: {
             min: 1,
-            max: 40,
+            max: 6,
           },
           animation: {
             count: 0,
@@ -453,7 +453,7 @@ function ParticlesComponent() {
             value: 0,
           },
           mode: "vertical",
-          speed: 5,
+          speed: 2,
         },
         tilt: {
           random: {

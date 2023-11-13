@@ -11,10 +11,10 @@ export default function AboutMe() {
         </div>
         <div className="aboutInfo">
           <p>
-            Hi, I'm Pete Richards, thriving in the fast-paced environment of the University of Denver’s Coding Boot Camp!
+            Hi, I'm Pete Richards, recent graduate of the University of Denver’s Coding Boot Camp!
           </p>
           <p>
-            Initiating a career shift in May 2023, I moved from sales and management to follow my passion for Software Development. My progression has been rapid and rewarding, with accomplishments including completing Harvard’s CS50 course and actively participating in The Odin Project as a precursor to this boot camp.
+            Initiating a career shift in May 2023, I moved from sales and management to follow my passion for Software Development. My progression has been rapid and rewarding, with accomplishments including completing DU's Full Stack Web Development Boot Camp, Harvard’s CS50 course, and actively collaborating with my former boot camp peers on ongoing full stack projects.
           </p>
           <p>
             The tech industry, with its constant innovation and complex problem-solving, has fascinated me for years. My recent immersive learning experience has solidified my passion, honing my skills in coding, collaboration, and critical thinking.

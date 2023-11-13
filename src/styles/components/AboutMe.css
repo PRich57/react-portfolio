@@ -31,5 +31,14 @@ p {
   .main-container .container .image img {
     width: 15rem;
     height: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .about {
+    padding: 1rem 0;
   }
 }

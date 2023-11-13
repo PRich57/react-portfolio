@@ -42,11 +42,18 @@ span[data-info] {
   cursor: pointer;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 770px) {
   .media-icons {
     max-width: 3rem;
     margin: 5px;
     margin-left: 0px;
-    opacity: 60%;
+    opacity: 70%;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.776);
   }
 }
+
