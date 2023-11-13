@@ -3,8 +3,8 @@
 }
 
 .resume img:hover {
-  border: 2px solid #646cff;
-  transition: 0.1s ease;
+  box-shadow: 9px 9px 9px #646cff;
+  transition: .4s ease-in-out;
 }
 
 .resume {

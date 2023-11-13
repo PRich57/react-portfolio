@@ -7,18 +7,20 @@
 
 .projects img {
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   margin-bottom: 2rem;
   border-radius: 1rem 1rem 0 0;
 }
 
 .main-container a span[data-info]:hover::after {
-  bottom: -32px;
-  left: -8px;
+  bottom: -33px;
+  left: -5px;
 }
 
-.main-container p {
-  font-size: 1.2rem;
+/* .card {} */
+
+.main-container .card p {
+  font-size: 1rem;
 }
 
 .card-icons {
@@ -30,17 +32,24 @@
   transition: 0.4s ease-in-out;
 }
 
+/* .icon-container {
+  position: relative;
+  bottom: 0;
+} */
+
 div.card {
   filter: grayscale(80%);
   border: 1px solid rgba(255, 255, 255, 0.276);
   border-radius: 1rem;
   margin: 1rem;
   transition: 0.4s ease-in-out;
+  max-width: 26rem;
 }
 
 div.card:hover {
   filter: none;
-  box-shadow: 1px 3px 3px #646cff;
+  scale: 1.01;
+  box-shadow: 1px 5px 10px #646cff;
   transition: 0.4s ease-in-out;
 }
 
