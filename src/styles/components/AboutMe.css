@@ -25,7 +25,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .main-container {
-    width: 100%
+    width: 100%;
+    margin-bottom: 4rem;
   }
 
   .main-container .container .image img {
@@ -35,7 +36,7 @@ p {
   }
 
   p {
-    margin: 0;
+    margin: 1rem 2rem;
   }
 
   .about {

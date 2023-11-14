@@ -108,6 +108,9 @@ function ContactForm() {
             onChange={handleChange(setMessage)}
           />
         </Form.Group>
+        <Button className='submitBtn' type='submit'>
+          Send
+        </Button>
         {notValid && (
           <Toast className='contactInput container toastF' variant='info'>
             Please fill out all input fields before sending.
@@ -118,9 +121,6 @@ function ContactForm() {
             Your message has been sent successfully!
           </Toast>
         )}
-        <Button className='submitBtn' type='submit'>
-          Send
-        </Button>
       </Form>
       <h2>Contact</h2>
     </>

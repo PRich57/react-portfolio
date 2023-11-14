@@ -41,6 +41,7 @@ textarea {
   width: 8rem;
   height: 3rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .submitBtn:hover {
@@ -59,10 +60,12 @@ textarea {
   textarea {
     height: 6rem;
     width: 100%;
+    margin: .7rem 0;
   }
   
   label, input {
     width: 100%;
+    margin: .7rem 0;
   }
 }
 
