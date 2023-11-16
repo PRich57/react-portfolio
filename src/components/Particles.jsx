@@ -8,7 +8,7 @@ function ParticlesComponent() {
       autoPlay: true,
       background: {
         color: {
-          value: "#030315",
+          value: "#2f004f",
         },
         image: "",
         position: "",
@@ -69,10 +69,10 @@ function ParticlesComponent() {
             quantity: 5,
             particles: {
               color: {
-                value: "#ff0000",
+                value: "#000000",
                 animation: {
                   enable: true,
-                  speed: 400,
+                  speed: 10,
                   sync: true,
                 },
               },
@@ -89,10 +89,10 @@ function ParticlesComponent() {
                 speed: 2,
               },
               size: {
-                value: 5,
+                value: 1,
                 animation: {
                   enable: true,
-                  speed: 5,
+                  speed: 1,
                   minimumValue: 1,
                   sync: true,
                   startValue: "min",
@@ -102,11 +102,11 @@ function ParticlesComponent() {
             },
           },
           attract: {
-            distance: 200,
+            distance: 2,
             duration: 0.4,
             easing: "ease-out-quad",
             factor: 1,
-            maxSpeed: 50,
+            maxSpeed: 10,
             speed: 1,
           },
           bounce: {
@@ -124,14 +124,14 @@ function ParticlesComponent() {
             },
           },
           connect: {
-            distance: 80,
+            distance: 0,
             links: {
               opacity: 0.2,
             },
-            radius: 60,
+            radius: 0,
           },
           grab: {
-            distance: 100,
+            distance: 0,
             links: {
               blink: false,
               consent: false,
@@ -235,13 +235,13 @@ function ParticlesComponent() {
           },
         },
         color: {
-          value: "#ff0000",
+          value: "#ffffff",
           animation: {
             h: {
               count: 0,
               enable: true,
               offset: 0,
-              speed: 50,
+              speed: 0,
               delay: 0,
               decay: 0,
               sync: false,
@@ -270,10 +270,10 @@ function ParticlesComponent() {
         move: {
           angle: {
             offset: 0,
-            value: 90,
+            value: 0,
           },
           attract: {
-            distance: 100,
+            distance: 10,
             enable: false,
             rotate: {
               x: 3000,
@@ -318,7 +318,7 @@ function ParticlesComponent() {
           },
           random: false,
           size: true,
-          speed: 1.5,
+          speed: 0.6,
           spin: {
             acceleration: 2,
             enable: false,
@@ -326,7 +326,7 @@ function ParticlesComponent() {
           straight: false,
           trail: {
             enable: false,
-            length: 10,
+            length: 1,
             fill: {},
           },
           vibrate: false,
@@ -335,25 +335,25 @@ function ParticlesComponent() {
         number: {
           density: {
             enable: true,
-            width: 700,
-            height: 700,
+            width: 600,
+            height: 600,
           },
           limit: 0,
-          value: 20,
+          value: 25,
         },
         opacity: {
           random: {
             enable: true,
-            minimumValue: 0.2,
+            minimumValue: 1,
           },
           value: {
             min: 0.1,
-            max: 0.7,
+            max: 1,
           },
           animation: {
             count: 0,
-            enable: true,
-            speed: 0.2,
+            enable: false,
+            speed: 0,
             decay: 0,
             delay: 0,
             sync: false,
@@ -384,11 +384,11 @@ function ParticlesComponent() {
         size: {
           random: {
             enable: true,
-            minimumValue: .3,
+            minimumValue: .1,
           },
           value: {
             min: 1,
-            max: 6,
+            max: 1,
           },
           animation: {
             count: 0,
@@ -477,9 +477,9 @@ function ParticlesComponent() {
             opacity: .2,
           },
           particles: {
-            enable: false,
-            frequency: 0.05,
-            opacity: .2,
+            enable: true,
+            frequency: .5,
+            opacity: 1,
           },
         },
         wobble: {
@@ -551,7 +551,7 @@ function ParticlesComponent() {
           },
           consent: false,
           distance: 100,
-          enable: true,
+          enable: false,
           frequency: 1,
           opacity: 1,
           shadow: {

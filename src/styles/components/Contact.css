@@ -10,6 +10,7 @@ label {
   margin: 1rem;
   margin-left: 4rem;
   width: 30%;
+  color: rgb(210, 171, 255);
 }
 
 input, textarea {
@@ -18,6 +19,11 @@ input, textarea {
   margin-left: 8rem;
   margin-top: 1rem;
   padding-left: 1rem;
+  background-color: #2f004f;
+}
+
+h3, h4 {
+  margin: 1rem 0rem;
 }
 
 textarea {
@@ -37,7 +43,7 @@ textarea {
 }
 
 .submitBtn {
-  border: 1px solid rgba(255, 255, 255, 0.324);
+  border: 1px solid rgb(196, 88, 250);
   width: 8rem;
   height: 3rem;
   margin-top: 1rem;
@@ -49,7 +55,7 @@ textarea {
   transition: 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 
   .mb-3 {
     flex-direction: column;

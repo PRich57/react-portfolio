@@ -12,9 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --light-font-color: #ebe0ff;
-  --blueColor: #5900ff;
-  --headingColor: rgb(107, 110, 204);
+  --light-font-color: rgb(198, 147, 255);
+  --blueColor: #752cfd;
+  --headingColor: rgb(202, 156, 255);
 }
 
 html {
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #af64ff;
 }
 
 button:focus,
@@ -96,7 +96,8 @@ button:focus-visible {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column-reverse;
-  background-color: rgba(0, 0, 0, 0.565);
+  padding-bottom: 5rem;
+  background-color: rgba(0, 0, 0, 0.265);
   border-radius: 2rem;
 }
 
@@ -105,24 +106,6 @@ button:focus-visible {
   width: 24rem;
   border-radius: 2rem;
 }
-
-/* @media screen and (max-width: 1280px) {
-  html {
-    max-width: 100%;
-  }
-  
-  #root {
-    max-width: 100%;
-  }
-
-  body {
-    max-width: 100%;
-  }
-  
-  main {
-    max-width: 100%;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   h2 {
