@@ -23,7 +23,11 @@ input, textarea {
 }
 
 h3, h4 {
-  margin: 1rem 0rem;
+  margin-top: 0;
+}
+
+h4 {
+  margin-bottom: 2.5rem;
 }
 
 textarea {
