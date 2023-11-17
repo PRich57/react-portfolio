@@ -16,15 +16,15 @@ nav ul {
 }
 
 nav button {
-  min-width: 15rem;
-  max-width: 15rem;
+  min-width: 16rem;
+  max-width: 16rem;
   max-height: 4rem;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
 .active-btn {
-  border: 2px solid var(--blueColor);
+  border: 2px solid var(--headingColor);
 }
 
 nav ul li {

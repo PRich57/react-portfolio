@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
 :root {
   font-family: 'Raleway', sans-serif;
@@ -43,6 +43,8 @@ body {
 
 #error-page {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -55,9 +57,15 @@ main {
 h2 {
   font-size: 3rem;
   color: var(--headingColor);
+  /* font-style: italic; */
 }
 
-button {
+ul {
+  list-style: none;
+}
+
+nav button,
+.submitBtn {
   color: white;
   text-transform: uppercase;
   border-radius: 8px;

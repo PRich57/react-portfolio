@@ -1,18 +1,18 @@
+import Accordion from "../components/About/Accordion";
 import { TypeAnimation } from "react-type-animation";
 import "../styles/components/AboutMe.css";
 import profilePic from "/src/assets/linkedin_profile_pic.jpg";
-import AboutAccordion from "../components/Accordion";
 
 export default function AboutMe() {
   return (
     <>
-      {/* <AboutAccordion /> */}
       <div className="about">
         <div className="image">
           <img src={profilePic} alt="Picture of Pete" />
         </div>
         <div className="aboutInfo">
-          <p>
+          <Accordion />
+          {/* <p>
             Hey, I'm Pete! I recently graduated from the intense Full Stack 
             Coding Boot Camp at the University of Denver!
           </p>
@@ -35,7 +35,7 @@ export default function AboutMe() {
             significant impact in the tech world! My journey has equipped me
             with a comprehensive skill set, preparing me for the challenges and
             opportunities that lie ahead.
-          </p>
+          </p> */}
         </div>
       </div>
       <h2>

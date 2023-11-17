@@ -101,6 +101,10 @@
   justify-content: space-between;
   cursor: default;
 }
+.card-title {
+  font-style: italic;
+  text-decoration: 1px underline;
+}
 
 .card p {
   font-size: 1.09rem;
