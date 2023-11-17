@@ -85,10 +85,6 @@
   transition: all 0.2s 0.1s ease-in-out;
 }
 
-.main-container .card p {
-  font-size: 1rem;
-}
-
 .card-icons {
   margin: 1rem 2rem;
 }
@@ -106,7 +102,13 @@
   cursor: default;
 }
 
-div.card {
+.card p {
+  font-size: 1.09rem;
+  margin: 1rem;
+  padding: 0;
+}
+
+.card {
   border: 1px solid rgba(255, 255, 255, 0.276);
   border-radius: 1rem;
   margin: 1rem;
@@ -114,14 +116,21 @@ div.card {
   max-width: 26rem;
 }
 
-div.card:hover {
+.card:hover {
   scale: 1.01;
   box-shadow: 1px 5px 10px #b764ff;
   transition: 0.4s ease-in-out;
 }
 
+@media screen and (max-width: 2116px) {
+  .card {
+    max-width: 24rem;
+    margin: .5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  div.card {
+  .card {
     min-width: 18rem;
     filter: none;
   }
@@ -130,12 +139,13 @@ div.card:hover {
     height: auto;
   }
 
-  div.card p {
+  .card p {
     font-size: 1rem;
     margin: 1rem;
+    padding: 0;
   }
 
-  div.card img {
+  .card img {
     max-height: 20rem;
   }
 }
@@ -155,12 +165,12 @@ div.card:hover {
     padding: 0;
   }
 
-  div.card {
+  .card {
     max-width: 21rem;
     margin: 1rem 0;
   }
 
-  div.card img {
+  .card img {
     max-height: 13rem;
   }
 }

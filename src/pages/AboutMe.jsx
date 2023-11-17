@@ -1,10 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
 import "../styles/components/AboutMe.css";
 import profilePic from "/src/assets/linkedin_profile_pic.jpg";
+import AboutAccordion from "../components/Accordion";
 
 export default function AboutMe() {
   return (
     <>
+      {/* <AboutAccordion /> */}
       <div className="about">
         <div className="image">
           <img src={profilePic} alt="Picture of Pete" />

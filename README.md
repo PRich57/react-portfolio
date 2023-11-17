@@ -57,7 +57,7 @@
 
   The following video shows the application's design and functionality.
 
-  ![Image of Pete's Portfolio](./public/assets/react-portfolio-screenshot.png)
+  ![Image of Pete's Portfolio](./src/assets/react-portfolio-screenshot.png)
 
 ## License
 

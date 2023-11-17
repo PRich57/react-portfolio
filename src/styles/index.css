@@ -83,7 +83,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  width: 75%;
+  width: 90%;
   min-height: 50%;
   text-align: center;
   font-size: 2rem;
@@ -107,6 +107,12 @@ button:focus-visible {
   border-radius: 2rem;
 }
 
+@media screen and (max-width: 1628px) {
+  .main-container {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h2 {
     margin-bottom: 0;
@@ -115,5 +121,15 @@ button:focus-visible {
   .main-container .container .image img {
     width: 15rem;
     height: 15rem;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }

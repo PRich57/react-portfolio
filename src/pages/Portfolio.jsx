@@ -15,7 +15,7 @@ function Projects() {
   const projectData = [
     {
       title: `Blurb: Social Media App`,
-      description: `Blurb is a dynamic and interactive micro-blogging platform that empowers users to share their thoughts, ideas, and stories in bite-sized messages called 'Blurbs.' With a character limit tailored for brevity, Blurb enables users to express themselves concisely, engaging in real-time conversations with a global community of like-minded individuals.`,
+      description: `Blurb is a social media platform that empowers users to share their thoughts, ideas, and stories in bite-sized messages called 'Blurbs.' With a character limit tailored for brevity, Blurb enables users to express themselves concisely, engaging with a community of diverse individuals.`,
       liveLink: `https://blurb4-web-6d7dbae39646.herokuapp.com/`,
       repoLink: `https://github.com/ljkahn/Blurb`,
       imgSrc: blurb,

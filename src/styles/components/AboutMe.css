@@ -14,6 +14,14 @@ p {
   line-height: 1.5;
   font-size: 1.3rem;
   margin: 1rem 2rem;
+  display: inline-block;
+  padding-right: 10rem;
+}
+
+@media screen and (max-width: 1920px) {
+  p {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 1580px) {
@@ -41,5 +49,15 @@ p {
 
   .about {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
