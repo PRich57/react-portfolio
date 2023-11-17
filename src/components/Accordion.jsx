@@ -8,7 +8,7 @@ function AboutAccordion() {
         <Accordion.Header>Hello, world!</Accordion.Header>
         <Accordion.Body>
         Hi, I'm Pete Richards, recent graduate of the University of Denver’s
-            Coding Boot Camp!
+            Coding Boot Camp! "I recently completed this intense boo"
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">

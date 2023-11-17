@@ -125,10 +125,10 @@ function ContactForm() {
       <h4>
         Let's build something cool together!
       </h4>
-      <h3>
+      {/* <h3>
         Send me a message!
-      </h3>
-      <h2>Contact</h2>
+      </h3> */}
+      <h2>Message Me</h2>
     </>
   );
 }
