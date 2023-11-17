@@ -14,18 +14,20 @@
 
 .tech-icons {
   margin: 1rem;
-  /* padding: 1rem; */
   width: 50px;
   height: 50px;
   padding-bottom: 0;
-  border-radius: 50%;
 }
 
-.tech-icons:hover {
-  color: #b46aff;
-  box-shadow: 0 0 10px #b46aff;
-  text-shadow: 0 0 10px #b46aff;
-}
+/* .tech-icons:hover { */
+  /* width: 60px;
+  height: 60px; */
+  /* padding: 1rem; */
+  /* border-radius: 20%; */
+  /* color: #b46aff;
+  box-shadow: 0 0 20px #b46aff; */
+  /* text-shadow: 0 0 10px #b46aff; */
+/* } */
 
 .tooltip {
   /* position: relative; */

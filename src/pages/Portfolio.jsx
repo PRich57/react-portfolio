@@ -4,9 +4,13 @@ import gameSeekers from "/src/assets/gameSeekersScreenshot.png";
 import weatherDash from "/src/assets/weather-dashboard-screenshot.png";
 import blurb from "/src/assets/blurb.png";
 import Project from "../components/Project";
+import useMousePosition from "../utils/mousePosition";
 import "../styles/components/Portfolio.css";
 
 function Projects() {
+
+  const mousePosition = useMousePosition();
+
   // Create projectData array of objects to insert values for each project card
   const projectData = [
     {
@@ -161,6 +165,7 @@ function Projects() {
         ))}
       </div>
       <h2 id="projects">Projects</h2>
+      {/* <h3>{JSON.stringify(mousePosition)}</h3> */}
     </>
   );
 }
