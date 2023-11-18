@@ -95,7 +95,7 @@
 }
 
 .card-body {
-  height: 23rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,7 +107,7 @@
 }
 
 .card p {
-  font-size: 1.09rem;
+  font-size: 1.2rem;
   margin: 1rem;
   padding: 0;
 }
@@ -126,15 +126,16 @@
   transition: 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 2116px) {
+@media screen and (max-width: 1870px) {
   .card {
-    max-width: 24rem;
+    max-width: 30rem;
     margin: .5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .card {
+    max-width: 24rem;
     min-width: 18rem;
     filter: none;
   }
@@ -176,5 +177,19 @@
 
   .card img {
     max-height: 13rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .card {
+    max-width: 16rem;
+    margin: 1rem 0;
+    min-width: 10rem;
+
+  }
+
+  .card img {
+    max-height: 10rem;
+    min-width: 5rem;
   }
 }

@@ -24,6 +24,7 @@ input, textarea {
 
 h3, h4 {
   margin-top: 0;
+  padding: 0 1rem;
 }
 
 h4 {
@@ -79,10 +80,27 @@ textarea {
   }
 }
 
+@media screen and (max-width: 768px) {
+  h4 {
+    margin-top: 1rem;
+  }
+}
+
 @media screen and (max-width: 580px) {
+  form {
+    width: 100%;
+  }
+  
   label {
     font-size: 1.2rem;
     margin-bottom: 0;
+  }
+
+  h4 {
+    /* width: 90%; */
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1rem;
   }
   
   input, textarea {

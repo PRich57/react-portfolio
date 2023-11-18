@@ -115,7 +115,7 @@ button:focus-visible {
   border-radius: 2rem;
 }
 
-@media screen and (max-width: 1628px) {
+@media screen and (max-width: 1870px) {
   .main-container {
     width: 80%;
   }
