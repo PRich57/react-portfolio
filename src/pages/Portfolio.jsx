@@ -15,28 +15,28 @@ function Projects() {
   const projectData = [
     {
       title: `Blurb: Social Media App`,
-      description: `Blurb is a social media platform that empowers users to share their thoughts, ideas, and stories in bite-sized messages called 'Blurbs.' With a character limit tailored for brevity, Blurb enables users to express themselves concisely, engaging with a community of diverse individuals.`,
+      description: `Switch to Blurb, the innovative social media platform where your voice matters. Say goodbye to the clutter and hello to a fresher, more engaging online experience!`,
       liveLink: `https://blurb4-web-6d7dbae39646.herokuapp.com/`,
       repoLink: `https://github.com/ljkahn/Blurb`,
       imgSrc: blurb,
     },
     {
       title: `Dev Row Records`,
-      description: `Welcome to the Dev Row Records online music platform, where you can discover and support the talented artists represented by our record label. This platform provides an interactive and engaging experience for users to explore artists, albums, merchandise, and more.`,
+      description: `Step into the rhythm of Dev Row Records, where beats meet creativity in a revolutionary way. Experience the new era of music with a nod to the legends, only at Dev Row Records – where every track tells a story.`,
       liveLink: `https://dev-row-records-63d750921ea0.herokuapp.com/`,
       repoLink: `https://github.com/PRich57/dev-row-records`,
       imgSrc: devRow,
     },
     {
       title: "Game Seekers",
-      description: `Welcome to GAME SEEKERS, your one-stop destination for discovering new and exciting video games tailored to your preferences! Whether you're a hardcore gamer, a casual player, or just looking for your next gaming adventure, this application has got you covered.`,
+      description: `Discover your next gaming obsession with Game Seekers, the ultimate video game recommendation engine. Tailored to your tastes, find games you'll love based on your all-time favorites!`,
       liveLink: `https://ljkahn.github.io/videoGameProj/`,
       repoLink: `https://github.com/ljkahn/videoGameProj`,
       imgSrc: gameSeekers,
     },
     {
       title: `Weather Dashboard`,
-      description: `This Weather Dashboard aims to provide the user with a free and easy-to-use weather application. The app will display the current weather and a 5-day forecast of any city the user would like to view. This web application was designed to maximize viewing comfort on mobile and desktop browsers.`,
+      description: `Why step outside to check the weather when you can just tap your screen? Get your daily and 5-day forecasts with SkyView - where the forecast is always at your fingertips, rain or shine!`,
       liveLink: `https://prich57.github.io/weather-dashboard/`,
       repoLink: `https://github.com/PRich57/weather-dashboard`,
       imgSrc: weatherDash,
