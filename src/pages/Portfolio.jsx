@@ -35,8 +35,8 @@ function Projects() {
       imgSrc: gameSeekers,
     },
     {
-      title: `Weather Dashboard`,
-      description: `Why step outside to check the weather when you can just tap your screen? Get your daily and 5-day forecasts with SkyView - where the forecast is always at your fingertips, rain or shine!`,
+      title: `Weather Dash`,
+      description: `Why step outside to check the weather when you can just tap your screen? Get your daily and 5-day forecasts with Weather Dash - where the forecast is always at your fingertips, rain or shine! Now you can finally stop blaming the weatherman for ruining your plans. 🌦️☔`,
       liveLink: `https://prich57.github.io/weather-dashboard/`,
       repoLink: `https://github.com/PRich57/weather-dashboard`,
       imgSrc: weatherDash,
