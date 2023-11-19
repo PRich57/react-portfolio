@@ -65,7 +65,8 @@ ul {
 }
 
 nav button,
-.submitBtn {
+.submitBtn,
+.resumeBtn {
   color: white;
   text-transform: uppercase;
   border-radius: 8px;

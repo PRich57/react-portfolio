@@ -1,15 +1,28 @@
-.resume img {
+.resumeBtn {
+  border: 1px solid rgb(196, 88, 250);
+  width: 16rem;
+  height: 3rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.resumeBtn:hover {
+  border: 2px solid var(--headingColor);
+  transition: 0.2s ease-in-out;
+}
+
+/* .resume img {
   max-width: 90%;
 }
 
 .resume img:hover {
-  box-shadow: 9px 9px 9px #646cff;
+  box-shadow: 9px 9px 9px var(--headingColor);
   transition: .4s ease-in-out;
 }
 
 .resume {
   margin-bottom: 10rem;
-}
+} */
 
 h6 {
   margin: 0;
@@ -18,9 +31,9 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .resume {
+  /* .resume {
     margin-bottom: 0;
     min-width: 20rem;
     margin-left: 2rem;
-  }
+  } */
 }

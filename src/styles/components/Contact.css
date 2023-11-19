@@ -56,8 +56,8 @@ textarea {
 }
 
 .submitBtn:hover {
-  border: 1px solid #646cff;
-  transition: 0.4s ease-in-out;
+  border: 2px solid var(--headingColor);
+  transition: 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {
