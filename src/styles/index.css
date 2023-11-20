@@ -124,7 +124,7 @@ button:focus-visible {
 
 @media screen and (max-width: 768px) {
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   .main-container .container .image img {

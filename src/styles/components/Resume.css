@@ -57,10 +57,26 @@ h4 {
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-  /* .resume {
-    margin-bottom: 0;
-    min-width: 20rem;
-    margin-left: 2rem;
-  } */
+@media screen and (max-width: 1200px) {
+  .resumeSections {
+    font-size: 1.3rem;
+  }
+  
+  .resumeContent {
+    font-size: 1rem;
+    padding: 2rem;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .resume {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+    gap: 4rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
 }

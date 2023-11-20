@@ -87,9 +87,9 @@ textarea {
 }
 
 @media screen and (max-width: 580px) {
-  form {
+  /* form {
     width: 100%;
-  }
+  } */
   
   label {
     font-size: 1.2rem;
@@ -97,18 +97,16 @@ textarea {
   }
 
   h4 {
-    /* width: 90%; */
     font-size: 1.4rem;
     text-align: center;
-    padding: 0 1rem;
   }
   
-  input, textarea {
+  /* input, textarea {
     min-width: 10rem;
     height: 2rem;
     margin-left: 2rem;
     margin-top: 1rem;
-  }
+  } */
 
   textarea {
     height: 4rem;

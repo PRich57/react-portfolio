@@ -1,5 +1,4 @@
 import pdf from "/src/assets/resume.pdf";
-import resume from "/src/assets/resume.png";
 import "../styles/components/Resume.css";
 import { Download } from "react-bootstrap-icons"
 import Button from "../components/Button"
