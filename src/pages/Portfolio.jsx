@@ -22,7 +22,8 @@ function Projects() {
           />
         ))}
       </div>
-      <h2 id="projects">Projects</h2>
+      <p id="projects">Here are some of my recent projects!</p>
+      <h2>Projects</h2>
       {/* <h3>{JSON.stringify(mousePosition)}</h3> */}
     </>
   );
