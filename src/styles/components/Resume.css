@@ -39,13 +39,17 @@
 
 .techTooltip {
   position: absolute;
-  /* background-color: rgba(137, 43, 226, 0.322); */
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.772);
-  padding: .5rem 1rem;
+  padding: 5px 10px;
   transform: translateX(-50%);
   white-space: nowrap;
+  color: var(--headingColor);
+  font-style: italic;
+  background-color: rgba(72, 0, 131, 0.5);
+  border-radius: 4px;
+  margin: 8px 0px;
 }
+
 .left,
 .right {
   text-align: center;
@@ -90,31 +94,39 @@
   content: '';
   position: absolute;
   left: -1px;
-  top: 50%;
+  top: 0%;
   bottom: 0;
-  height: 100%;
-  border-left: 2px solid #d2cfcf;
+  height: 160%;
+  border-left: 2px solid var(--headingColor);
+  box-shadow: 0px 0px 5px var(--headingColor);
 }
 
 .resumeList li::after {
   content: '';
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 12px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #d2cfcf;
-  box-shadow: 0px 0px 12px var(--headingColor);
+  background-color: #ffffff;
+  border: 2px solid var(--headingColor);
+  box-shadow: 0px 0px 10px var(--headingColor);
   transform: translateX(-50%) translateY(-50%);
 }
 
 .resumeList li:first-child::before {
-  top: 50%; /* Adjust if your design needs it */
+  top: 80%; /* Adjust if your design needs it */
+  height: 200%
 }
 
 .resumeList li:last-child::before {
-  content: none;
+  top: 0%; /* Adjust if your design needs it */
+  height: 100%
+}
+
+.resumeList li:last-child::before {
+  content: '';
 }
 
 /* .resumeItem {

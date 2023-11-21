@@ -3,8 +3,8 @@ import pdf from "/src/assets/resume.pdf";
 import "../styles/components/Resume.css";
 import { Download } from "react-bootstrap-icons";
 import Button from "../components/Button";
-import ResumeIcon from "../components/resumeIcon";
-import { resumeIcons } from "../utils/resumeIcons";
+import ResumeIcon from "../components/Resume/ResumeIcon";
+import { resumeIcons } from "../utils/resumeUtils/resumeIcons";
 
 export default function Resume() {
   const [hiddenWord, setHiddenWord] = useState("");
@@ -39,10 +39,10 @@ export default function Resume() {
         ))}
         {hiddenWord && (
           <div
-            className="techTooltip"
+            className="techTooltip open"
             style={{
               top: `${tooltipPosition.top}px`,
-              left: `${tooltipPosition.left}px`
+              left: `${tooltipPosition.left}px`,
             }}
           >
             {hiddenWord}
@@ -56,6 +56,11 @@ export default function Resume() {
             <ul className="resumeList">
               <li className="resumeItem">content</li>
               <li>
+                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                </li>
+              <li>
+                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
                 more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
                 </li>
             </ul>

@@ -29,5 +29,9 @@ export const resumeSkills = [
         name: ["VS Code"]
       },
     ],
+  },
+  {
+    title: 'Soft Skills',
+    
   }
 ]
