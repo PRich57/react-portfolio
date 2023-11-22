@@ -2,6 +2,7 @@ import Particles from "./components/Particles";
 import Navigation from "./components/Nav";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ScrollToTopButton from "./components/ScrollToTop";
 import { Outlet } from 'react-router-dom';
 import "./styles/index.css";
 
@@ -23,6 +24,7 @@ function App() {
           </div> 
         </div>
       </main>
+      <ScrollToTopButton />
       <Footer />
     </>
   );
