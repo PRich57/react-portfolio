@@ -5,6 +5,7 @@ import { Download } from "react-bootstrap-icons";
 import Button from "../components/Button";
 import ResumeIcon from "../components/Resume/ResumeIcon";
 import { resumeIcons } from "../utils/resumeUtils/resumeIcons";
+import Skills from "../components/Resume/Skills"
 
 export default function Resume() {
   const [hiddenWord, setHiddenWord] = useState("");
@@ -55,24 +56,14 @@ export default function Resume() {
           <div className="resumeContent">
             <ul className="resumeList">
               <li className="resumeItem">content</li>
-              <li>
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                </li>
-              <li>
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                </li>
             </ul>
           </div>
           <h4 className="resumeSections">Skills</h4>
-          <div className="resumeContent">
-            <ul className="resumeList">
+          <div className="resumeContent skills">
+            <Skills/>
+            {/* <ul className="resumeList">
               <li className="resumeItem">content</li>
-              <li>
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-              </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="right">
@@ -80,18 +71,12 @@ export default function Resume() {
           <div className="resumeContent">
             <ul className="resumeList">
               <li className="resumeItem">content</li>
-              <li>
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-              </li>
             </ul>
           </div>
           <h4 className="resumeSections">Achievements</h4>
           <div className="resumeContent">
             <ul className="resumeList">
               <li className="resumeItem">content</li>
-              <li>
-                more contentdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-              </li>
             </ul>
           </div>
         </div>

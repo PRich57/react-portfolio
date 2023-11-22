@@ -67,6 +67,7 @@
 }
 
 .resumeContent {
+  
   padding: 4rem;
   padding-top: 0;
   font-size: 1.2rem;
@@ -78,6 +79,7 @@
   list-style: none;
   text-align: left;
   padding: 0;
+  padding-left: 10rem;
   position: relative;
   max-width: 100%;
 }
@@ -128,19 +130,51 @@
   content: '';
 }
 
-/* .resumeItem {
-  padding: 1rem;
-  text-align: justify;
-} */
+li.resumeItem {
+  margin: 1rem;
+  font-size: .9rem;
+}
 
 .acrossBottom {
   text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-container {
+  width: 50%;
+  margin: 1rem auto;
 }
 
 h4 {
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
+  font-size: 3rem;
+}
+
+h5 {
+  width: 50%;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: rgba(56, 0, 108, 0.518);
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+h6 {
+  margin: 1.5rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-style: italic;
+  color: aliceblue;
 }
 
 @media screen and (max-width: 1200px) {

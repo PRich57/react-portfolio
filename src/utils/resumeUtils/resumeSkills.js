@@ -4,34 +4,51 @@ export const resumeSkills = [
     languages: [
       {
         type: "Development",
-        name: ["JavaScript - Proficient", "HTML/CSS - Proficient", ],
+        skills: ["JavaScript - Proficient", "HTML/CSS - Proficient", ],
       },
       {
         type: "Database",
-        name: ["GraphQL/Apollo - Proficient", "SQL - Intermediate"],
+        skills: ["GraphQL/Apollo - Proficient", "SQL - Intermediate"],
       },
       {
         type: "Programming",
-        name: ["C - Intermediate", "Python - Intermediate"],
+        skills: ["C - Intermediate", "Python - Intermediate"],
       },
     ],
     tools: [
       {
         type: "IDE",
-        name: ["VS Code - Proficient"]
+        skills: ["VS Code - Proficient"]
       },
       {
         type: "Database & Database Libraries",
-        name: ["MongoDB/Mongoose - Proficient", "MySQL/Sequelize - Intermediate"]
+        skills: ["MongoDB/Mongoose - Proficient", "MySQL/Sequelize - Intermediate"]
       },
       {
-        type: "IDE",
-        name: ["VS Code"]
+        type: "Frameworks & Libraries",
+        skills: ["Node.js - Proficient", "React.js - Proficient", "jQuery - Proficient", "Express.js - Proficient", "Bootstrap - Proficient", "Material UI - Proficient"]
       },
     ],
   },
   {
     title: 'Soft Skills',
-    
+    skills: [
+      'Communication', 
+      'Leadership', 
+      'Problem-Solving',
+      'Creativity',
+      'Adaptability & Self-Learning',
+      'Algorithmic Thinking',
+      'Agile Development',
+      'Team-Building',
+      'Emotional Intelligence',
+      'Teamwork & Collaboration',
+      'Time Management',
+      'Project Management',
+      'Documentation Research',
+      'Research',
+      'Data Analysis',
+      'Data Visualization',
+    ]
   }
 ]
