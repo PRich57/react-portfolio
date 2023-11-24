@@ -1,13 +1,38 @@
 export const resumeIcons = [
   {
+    src: "https://simpleicons.vercel.app/javascript/F0DB4F",
+    alt: "JavaScript icon",
+    data: "JavaScript - Proficient"
+  },
+  {
+    src: "https://simpleicons.vercel.app/c/044F88",
+    alt: "C icon",
+    data: "C - Intermediate"
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png",
+    alt: "Python icon",
+    data: "Python - Intermediate"
+  },
+  {
     src: "https://simpleicons.now.sh/react/FF4154",
     alt: "React icon",
     data: "React - Proficient"
   },
   {
+    src: "https://simpleicons.vercel.app/jquery/0769AD",
+    alt: "jQuery icon",
+    data: "jQuery - Proficient"
+  },
+  {
     src: "https://simpleicons.now.sh/mongodb/47A248",
     alt: "MongoDB icon",
     data: "MongoDB - Proficient"
+  },
+  {
+    src: "https://simpleicons.vercel.app/mongoose/800020",
+    alt: "Mongoose icon",
+    data: "Mongoose - Proficient"
   },
   {
     src: "https://simpleicons.now.sh/express/ffffff",
