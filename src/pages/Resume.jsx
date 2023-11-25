@@ -59,7 +59,7 @@ export default function Resume() {
   return (
     <>
       <div className="acrossBottom">
-        <h4 className="resumeSections">Technologies</h4>
+        <h4 className="resumeSections">Technical Skills</h4>
         {resumeIcons.map((icon, index) => (
           <ResumeIcon
           key={index}
@@ -90,7 +90,7 @@ export default function Resume() {
               <li className="resumeItem">content</li>
             </ul>
           </div>
-          <h4 className="resumeSections">Skills</h4>
+          <h4 className="resumeSections">Soft Skills</h4>
           <div className="resumeContent skills">
             <Skills/>
           </div>

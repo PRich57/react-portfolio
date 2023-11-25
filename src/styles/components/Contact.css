@@ -80,7 +80,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   h4 {
     margin-top: 1rem;
   }
@@ -96,7 +96,7 @@ textarea {
     margin-bottom: 0;
   }
 
-  h4 {
+  h4.contact-message {
     font-size: 1.4rem;
     text-align: center;
   }

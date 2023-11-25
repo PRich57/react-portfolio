@@ -5,7 +5,7 @@ const Skills = () => {
   const generateSkills = () => {
     return resumeSkills.map((skill, index) => (
       <div key={index} className="skills-container">
-        <h5>{skill.title}</h5>
+        {/* <h5>{skill.title}</h5> */}
         {skill.languages && skill.languages.map((language) => (
           <div key={language.type}>
             <h6>{language.type}</h6>

@@ -17,7 +17,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   /* grid-template-rows: repeat(2, 1fr); */
   align-items: start;
-  gap: 4rem;
+  /* gap: 4rem; */
   padding-bottom: 0;
   margin-bottom: 1rem;
   max-width: 100%;
@@ -78,7 +78,7 @@
   list-style: none;
   text-align: left;
   padding: 0;
-  /* padding-left: 10rem; */
+  /* padding-left: 6rem; */
   position: relative;
   max-width: 100%;
 }
@@ -133,6 +133,7 @@ li.resumeItem {
 
 .acrossBottom {
   text-align: center;
+  padding: 0 2rem;
 }
 
 .skills {
@@ -149,11 +150,11 @@ h4 {
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 h5 {
-  width: 50%;
+  width: 100%;
   font-size: 1.3rem;
   text-align: left;
   background-color: rgba(56, 0, 108, 0.518);
@@ -186,6 +187,7 @@ h6 {
 
   .resumeList {
     text-align: center;
+    /* padding-left: 0; */
   }
 
   h5 {

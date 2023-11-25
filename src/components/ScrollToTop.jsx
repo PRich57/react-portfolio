@@ -33,7 +33,7 @@ const ScrollToTopButton = () => {
     <>
       {isVisible && (
         <button onClick={scrollToTop} style={{ position: 'fixed', bottom: '10px', right: '10px', background: 'none', border: 'none', zIndex: '1000', opacity: '.7'}}>
-            <ArrowUpCircleFill className="card-icons-alt" color="white" size={40} />
+            <ArrowUpCircleFill color="white" size={40} />
         </button>
       )}
     </>

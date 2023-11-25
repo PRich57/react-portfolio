@@ -122,7 +122,7 @@ function ContactForm() {
           Send
         </Button>
       </Form>
-      <h4>
+      <h4 className='contact-message'>
         Let's build something cool together!
       </h4>
       <h2>Message Me</h2>
