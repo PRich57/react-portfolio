@@ -9,6 +9,9 @@ export const resumeEducation = [
   },
   {
     school: 'University of Denver',
-    degree: 'Certificate of '
+    degree: 'Full Stack Web Development Certificate',
+    startYear: new Date("08-2023"),
+    endYear: new Date("11-2023"),
+    location: 'Denver, CO'
   }
 ]

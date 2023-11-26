@@ -84,6 +84,7 @@ export default function Resume() {
       <div className="resumeWide">
         <div className="acrossBottom">
           <h4 className="resumeSections">Technical Skills</h4>
+          <div className="tech-icon-container">
           {resumeIcons.map((icon, index) => (
             <ResumeIcon
             key={index}
@@ -105,6 +106,7 @@ export default function Resume() {
               {hiddenWord}
             </div>
           )}
+          </div>
         </div>
         <h4 className="resumeSections">Relevant Experience</h4>
         <div className="resumeContent experience">

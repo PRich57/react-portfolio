@@ -4,6 +4,7 @@
   height: 3rem;
   margin-top: 0;
   margin-bottom: 0rem;
+  box-shadow: 1px 1px 8px black;
 }
 
 .resumeBtn:hover {
@@ -40,6 +41,7 @@
   justify-content: center;
   margin: 1rem;
   font-style: italic;
+  font-size: 1rem;
 }
 
 .exp-company {
@@ -48,6 +50,7 @@
   color: var(--headingColor);
   font-style: italic;
   font-size: 1.5rem;
+  box-shadow: 1px 1px 4px black;
 }
 
 .experienceList {
@@ -63,13 +66,18 @@ li.experienceItem {
   margin: 1rem;
 }
 
+.tech-icon-container {
+  margin: 0 2rem;
+}
+
 .tech-icons {
-  margin: 1rem;
+  margin: 1.5rem 1rem;
   width: 50px;
   height: 50px;
   padding: .5rem;
   border: 1px solid rgba(115, 0, 172, 0.484);
   border-radius: 1rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.687);
 }
 
 .tech-icons:hover {
@@ -87,7 +95,8 @@ li.experienceItem {
   background-color: rgba(72, 0, 131, 0.5);
   border-radius: 4px;
   margin: 8px 0px;
-  margin-top: 4px;
+  margin-top: 6px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.763);
 }
 
 .left,
@@ -104,6 +113,7 @@ li.experienceItem {
   max-width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.674);
 }
 
 .resumeContent {
@@ -224,6 +234,11 @@ h6 {
 }
 
 @media screen and (max-width: 1200px) {
+  .exp-headers {
+    flex-direction: column;
+    font-size: .8rem;
+  }
+
   .experienceList {
     width: 100%;
   }
@@ -406,7 +421,6 @@ h6 {
 
 @media screen and (max-width: 580px) {
   .exp-headers {
-    flex-direction: column;
     margin-bottom: 0;
   }
 
@@ -419,5 +433,9 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .experience {
+    padding: 0 1rem;
   }
 }

@@ -10,7 +10,7 @@ const ResumeIcon = ({ src, alt, data, handleMouseEnter, handleMouseLeave }) => (
     data-info={data}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
-  />
+    />
 );
 
 export default ResumeIcon;

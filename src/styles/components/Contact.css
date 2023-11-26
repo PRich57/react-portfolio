@@ -53,6 +53,7 @@ textarea {
   height: 3rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  box-shadow: 2px 2px 8px black;
 }
 
 .submitBtn:hover {
