@@ -7,6 +7,7 @@ import ResumeIcon from "../components/Resume/ResumeIcon";
 import { resumeIcons } from "../utils/resumeUtils/resumeIcons";
 import Skills from "../components/Resume/Skills"
 import RelevantExp from "../components/Resume/RelevantExp";
+import Education from "../components/Resume/Education";
 
 export default function Resume() {
   const [hiddenWord, setHiddenWord] = useState("");
@@ -69,9 +70,7 @@ export default function Resume() {
         <div className="right">
           <h4 className="resumeSections">Education</h4>
           <div className="resumeContent">
-            <ul className="resumeList">
-              <li className="resumeItem">content</li>
-            </ul>
+            <Education/>
           </div>
           <h4 className="resumeSections">Achievements</h4>
           <div className="resumeContent">
