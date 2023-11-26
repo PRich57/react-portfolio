@@ -60,24 +60,34 @@ export default function Resume() {
 
   return (
     <>
+    <div className="resumeWide">
+      {/* <h4 className="resumeSections">Relevant Experience</h4>
+      <div className="resumeContent experience">
+        <RelevantExp />
+      </div> */}
+    </div>
       <div className="resume">
         <div className="left">
           <h4 className="resumeSections">Soft Skills</h4>
           <div className="resumeContent skills">
             <Skills/>
           </div>
-        </div>
-        <div className="right">
           <h4 className="resumeSections">Education</h4>
           <div className="resumeContent">
             <Education/>
           </div>
-          <h4 className="resumeSections">Achievements</h4>
+        </div>
+        <div className="right">
+        <h4 className="resumeSections">Relevant Experience</h4>
+      <div className="resumeContent experience">
+        <RelevantExp />
+      </div>
+          {/* <h4 className="resumeSections">Achievements</h4>
           <div className="resumeContent">
             <ul className="resumeList">
               <li className="resumeItem">content</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="resumeWide">
@@ -107,10 +117,10 @@ export default function Resume() {
           )}
           </div>
         </div>
-        <h4 className="resumeSections">Relevant Experience</h4>
+        {/* <h4 className="resumeSections">Relevant Experience</h4>
         <div className="resumeContent experience">
           <RelevantExp />
-        </div>
+        </div> */}
       </div>
       <div className="button">
         <a href={pdf} target="_blank">
