@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import ResumeIcon from "../components/Resume/ResumeIcon";
 import { resumeIcons } from "../utils/resumeUtils/resumeIcons";
 import Skills from "../components/Resume/Skills"
+import RelevantExp from "../components/Resume/RelevantExp";
 
 export default function Resume() {
   const [hiddenWord, setHiddenWord] = useState("");
@@ -58,38 +59,8 @@ export default function Resume() {
 
   return (
     <>
-      <div className="acrossBottom">
-        <h4 className="resumeSections">Technical Skills</h4>
-        {resumeIcons.map((icon, index) => (
-          <ResumeIcon
-          key={index}
-          src={icon.src}
-          alt={icon.alt}
-          data={icon.data}
-          handleMouseEnter={handleMouseEnter}
-          handleMouseLeave={handleMouseLeave}
-          />
-        ))}
-        {hiddenWord && (
-          <div
-            className="techTooltip open"
-            style={{
-              top: `${tooltipPosition.top}px`,
-              left: `${tooltipPosition.left}px`,
-            }}
-          >
-            {hiddenWord}
-          </div>
-        )}
-      </div>
       <div className="resume">
         <div className="left">
-          <h4 className="resumeSections">Relevant Experience</h4>
-          <div className="resumeContent">
-            <ul className="resumeList">
-              <li className="resumeItem">content</li>
-            </ul>
-          </div>
           <h4 className="resumeSections">Soft Skills</h4>
           <div className="resumeContent skills">
             <Skills/>
@@ -108,6 +79,36 @@ export default function Resume() {
               <li className="resumeItem">content</li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="resumeWide">
+        <div className="acrossBottom">
+          <h4 className="resumeSections">Technical Skills</h4>
+          {resumeIcons.map((icon, index) => (
+            <ResumeIcon
+            key={index}
+            src={icon.src}
+            alt={icon.alt}
+            data={icon.data}
+            handleMouseEnter={handleMouseEnter}
+            handleMouseLeave={handleMouseLeave}
+            />
+            ))}
+          {hiddenWord && (
+            <div
+            className="techTooltip open"
+            style={{
+              top: `${tooltipPosition.top}px`,
+              left: `${tooltipPosition.left}px`,
+            }}
+            >
+              {hiddenWord}
+            </div>
+          )}
+        </div>
+        <h4 className="resumeSections">Relevant Experience</h4>
+        <div className="resumeContent experience">
+          <RelevantExp />
         </div>
       </div>
       <div className="button">
