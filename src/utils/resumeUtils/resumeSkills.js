@@ -1,35 +1,4 @@
 export const resumeSkills = [
-  // {
-  //   title: `Technical Skills`,
-  //   languages: [
-  //     {
-  //       type: "Development",
-  //       skills: ["JavaScript - Proficient", "HTML/CSS - Proficient", ],
-  //     },
-  //     {
-  //       type: "Database",
-  //       skills: ["GraphQL/Apollo - Proficient", "SQL - Intermediate"],
-  //     },
-  //     {
-  //       type: "Programming",
-  //       skills: ["C - Intermediate", "Python - Intermediate"],
-  //     },
-  //   ],
-  //   tools: [
-  //     {
-  //       type: "IDE",
-  //       skills: ["VS Code - Proficient"]
-  //     },
-  //     {
-  //       type: "Database & Database Libraries",
-  //       skills: ["MongoDB/Mongoose - Proficient", "MySQL/Sequelize - Intermediate"]
-  //     },
-  //     {
-  //       type: "Frameworks & Libraries",
-  //       skills: ["Node.js - Proficient", "React.js - Proficient", "jQuery - Proficient", "Express.js - Proficient", "Bootstrap - Proficient", "Material UI - Proficient"]
-  //     },
-  //   ],
-  // },
   {
     title: 'Soft Skills',
     skills: [
@@ -39,6 +8,7 @@ export const resumeSkills = [
       'Creativity',
       'Adaptability & Self-Learning',
       'Algorithmic Thinking',
+      'Initiative',
       'Agile Development',
       'Team-Building',
     ]
@@ -48,6 +18,7 @@ export const resumeSkills = [
     skills: [
       'Emotional Intelligence',
       'Teamwork & Collaboration',
+      'Self-Motivated',
       'Time Management',
       'Project Management',
       'Documentation Research',
@@ -57,3 +28,37 @@ export const resumeSkills = [
     ]
   },
 ]
+
+
+
+// {
+//   title: `Technical Skills`,
+//   languages: [
+//     {
+//       type: "Development",
+//       skills: ["JavaScript - Proficient", "HTML/CSS - Proficient", ],
+//     },
+//     {
+//       type: "Database",
+//       skills: ["GraphQL/Apollo - Proficient", "SQL - Intermediate"],
+//     },
+//     {
+//       type: "Programming",
+//       skills: ["C - Intermediate", "Python - Intermediate"],
+//     },
+//   ],
+//   tools: [
+//     {
+//       type: "IDE",
+//       skills: ["VS Code - Proficient"]
+//     },
+//     {
+//       type: "Database & Database Libraries",
+//       skills: ["MongoDB/Mongoose - Proficient", "MySQL/Sequelize - Intermediate"]
+//     },
+//     {
+//       type: "Frameworks & Libraries",
+//       skills: ["Node.js - Proficient", "React.js - Proficient", "jQuery - Proficient", "Express.js - Proficient", "Bootstrap - Proficient", "Material UI - Proficient"]
+//     },
+//   ],
+// },

@@ -58,14 +58,24 @@ export default function Resume() {
     }
   }, [currentIndex]);
 
+  const handleSkillMouseEnter = (skills) => {
+    skills.forEach(skill => {
+      document.querySelectorAll(`[data-skill="${skill}"]`).forEach(el => {
+        el.classList.add('glow');
+      });
+    });
+  };
+
+  const handleSkillMouseLeave = (skills) => {
+    skills.forEach(skill => {
+      document.querySelectorAll(`[data-skill="${skill}"]`).forEach(el => {
+        el.classList.remove('glow');
+      });
+    });
+  };
+
   return (
     <>
-    <div className="resumeWide">
-      {/* <h4 className="resumeSections">Relevant Experience</h4>
-      <div className="resumeContent experience">
-        <RelevantExp />
-      </div> */}
-    </div>
       <div className="resume">
         <div className="left">
           <h4 className="resumeSections">Soft Skills</h4>
@@ -80,7 +90,10 @@ export default function Resume() {
         <div className="right">
         <h4 className="resumeSections">Relevant Experience</h4>
       <div className="resumeContent experience">
-        <RelevantExp />
+        <RelevantExp 
+          onSkillEnter={handleSkillMouseEnter}
+          onSkillLeave={handleSkillMouseLeave}
+          />
       </div>
           {/* <h4 className="resumeSections">Achievements</h4>
           <div className="resumeContent">
