@@ -6,8 +6,6 @@ import "../styles/components/Portfolio.css";
 
 function Projects() {
 
-  const mousePosition = useMousePosition();
-
   return (
     <>
       <div className="projects">

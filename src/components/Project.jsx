@@ -1,10 +1,43 @@
-import React from "react";
+import React, { useCallback, useRef } from "react";
 import Card from "react-bootstrap/Card";
 import { Github, Window } from "react-bootstrap-icons";
 
 // Create Project component to insert into the portfolio page
-const Project = ({ title, description, liveLink, repoLink, imgSrc }) => (
-  <Card style={{ width: "35rem" }}>
+const Project = ({ title, description, liveLink, repoLink, imgSrc }) => {
+  // Create reference to the card component
+  const cardRef = useRef(null);
+
+  // Function to update card tilt based on mouse movement
+  const updateTilt = useCallback((e) => {
+    const card = cardRef.current;
+    const cardRect = card.getBoundingClientRect();
+    const centerX = cardRect.left + cardRect.width / 2;
+    const centerY = cardRect.top + cardRect.height / 2;
+    const deltaX = e.clientX - centerX;
+    const deltaY = e.clientY - centerY;
+    
+    const rotateX = deltaY / -30;
+    const rotateY = deltaX / 30; 
+
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  }, []);
+
+  const handleMouseMove = (e) => {
+    updateTilt(e);
+  };
+
+  const handleMouseLeave = () => {
+    const card = cardRef.current;
+    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+  };
+
+return (
+  <Card 
+    ref={cardRef} 
+    style={{ width: "35rem", transition: "transform 0.2s ease" }}
+    onMouseMove={handleMouseMove}
+    onMouseLeave={handleMouseLeave}
+    >
     <Card.Img variant="top" src={imgSrc} className="img-fluid" />
     <Card.Body>
       <Card.Title>{title}</Card.Title>
@@ -23,6 +56,7 @@ const Project = ({ title, description, liveLink, repoLink, imgSrc }) => (
       </div>
     </Card.Body>
   </Card>
-);
+  )
+};
 
 export default Project;
