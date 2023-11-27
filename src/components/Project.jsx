@@ -16,7 +16,7 @@ const Project = ({ title, description, liveLink, repoLink, imgSrc }) => {
     const deltaX = e.clientX - centerX;
     const deltaY = e.clientY - centerY;
     
-    const rotateX = deltaY / -30;
+    const rotateX = deltaY / -60;
     const rotateY = deltaX / 30; 
 
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
