@@ -4,6 +4,7 @@ import { projectData } from "../utils/projectData";
 import useMousePosition from "../utils/mousePosition";
 import "../styles/components/Portfolio.css";
 
+// Functional component responsible for rendering project cards
 function Projects() {
 
   return (
