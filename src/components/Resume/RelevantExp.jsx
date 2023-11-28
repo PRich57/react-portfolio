@@ -1,6 +1,7 @@
 import React from "react";
 import { resumeRelevantExp } from "../../utils/resumeUtils/resumeRelevantExp";
 
+// Functional component
 const RelevantExp = ({ onSkillEnter, onSkillLeave }) => {
   const generateRelevantExp = () => {
     return resumeRelevantExp.map((experience, index) => (

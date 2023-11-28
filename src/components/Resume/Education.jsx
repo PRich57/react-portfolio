@@ -1,7 +1,9 @@
 import React from "react";
 import { resumeEducation } from "../../utils/resumeUtils/resumeEducation";
 
+// Educational background component
 const Education = () => {
+  // Generate educational background for each item in resumeEducation array
   const generateEducation = () => {
     return resumeEducation.map((education, index) => (
       <div key={index} className="edu-container">
