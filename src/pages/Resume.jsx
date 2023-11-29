@@ -10,12 +10,13 @@ import RelevantExp from "../components/Resume/RelevantExp";
 import Education from "../components/Resume/Education";
 
 export default function Resume() {
+  // State variables for managing tooltip, index, and hover state
   const [hiddenWord, setHiddenWord] = useState("");
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
 
-
+  // Effect for auto-changing icons when not hovering
   useEffect(() => {
     let interval;
     if (!isHovering) { 
@@ -30,6 +31,7 @@ export default function Resume() {
     };
   }, [isHovering]); 
 
+  // Function to handle mouse enter event
   const handleMouseEnter = (e) => {
     setIsHovering(true);
     setHiddenWord(e.target.getAttribute("data-info"));
@@ -40,11 +42,13 @@ export default function Resume() {
     });
   }
 
+  // Function to handle mouse leave event
   const handleMouseLeave = () => {
     setIsHovering(false);
     setHiddenWord('');
   }
 
+  // Effect for setting tooltip position based on current icon
   useEffect(() => {
     const icon = resumeIcons[currentIndex];
     setHiddenWord(icon.data);
@@ -58,6 +62,7 @@ export default function Resume() {
     }
   }, [currentIndex]);
 
+  // Functions for handling skills mouse enter and leave events
   const handleSkillMouseEnter = (skills) => {
     skills.forEach(skill => {
       document.querySelectorAll(`[data-skill="${skill}"]`).forEach(el => {
@@ -74,6 +79,7 @@ export default function Resume() {
     });
   };
 
+  // Main component render
   return (
     <>
       <div className="resume">

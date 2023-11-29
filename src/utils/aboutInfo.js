@@ -1,3 +1,4 @@
+// Data for About Me page
 export const aboutInfo = [
   {
     title: `HELLO, WORLD!`,

@@ -1,7 +1,9 @@
 import React from "react";
 import { resumeSkills } from "../../utils/resumeUtils/resumeSkills";
 
+// Functional component for rendering skills
 const Skills = () => {
+  // Function to generate skills based on skill category and individual skills
   const generateSkills = () => {
     return resumeSkills.map((skillCategory, index) => (
       <div key={index} className="skills-container">

@@ -46,7 +46,7 @@ function ContactForm() {
       return;
     }
 
-    // Use emailJS with .env protected keys
+    // Use emailJS to send form
     emailjs.sendForm('service_d1wsx7u', 
       'template_vmxvdqx', 
       form.current, 

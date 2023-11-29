@@ -1,3 +1,4 @@
+// Data for Project cards on Projects page
 import devRow from "/src/assets/dev-row-records.png";
 import gameSeekers from "/src/assets/gameSeekersScreenshot.png";
 import weatherDash from "/src/assets/weather-dashboard-screenshot.png";

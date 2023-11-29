@@ -1,3 +1,4 @@
+// Data for Soft Skills section of Resume page
 export const resumeSkills = [
   {
     title: 'Soft Skills',

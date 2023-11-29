@@ -1,3 +1,4 @@
+// Data for Education section of Resume page
 export const resumeEducation = [
   {
     school: 'Ohio University',
