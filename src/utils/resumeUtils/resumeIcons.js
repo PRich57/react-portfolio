@@ -13,7 +13,7 @@ export const resumeIcons = [
   {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png",
     alt: "Python icon",
-    data: "Python - Intermediate"
+    data: "Python - Novice"
   },
   {
     src: "https://simpleicons.now.sh/react/FF4154",
