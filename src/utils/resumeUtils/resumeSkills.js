@@ -21,7 +21,7 @@ export const resumeSkills = [
       'Team-Building',
       'Emotional Intelligence',
       'Teamwork & Collaboration',
-      'Self-Motivated',
+      'Self-Motivation',
       'Time Management',
       'Project Management',
       'Attention to Detail',
