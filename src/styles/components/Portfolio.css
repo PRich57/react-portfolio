@@ -91,6 +91,7 @@
 .card-title {
   font-style: italic;
   text-decoration: 1px underline;
+  color: var(--headingColor);
 }
 
 .card p {

@@ -40,7 +40,7 @@ return (
     >
     <Card.Img variant="top" src={imgSrc} className="img-fluid" />
     <Card.Body>
-      <a href={liveLink} target="_blank" rel="noopener noreferrer">
+      <a href={liveLink} target="_blank" rel="noopener noreferrer" className="card-title">
         <Card.Title>{title}</Card.Title>
       </a>
       <Card.Text>{description}</Card.Text>
