@@ -15,9 +15,9 @@ const Project = ({ title, description, liveLink, repoLink, imgSrc }) => {
     const centerY = cardRect.top + cardRect.height / 2;
     const deltaX = e.clientX - centerX;
     const deltaY = e.clientY - centerY;
-    
+
     const rotateX = deltaY / -60;
-    const rotateY = deltaX / 30; 
+    const rotateY = deltaX / 30;
 
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   }, []);
@@ -28,37 +28,42 @@ const Project = ({ title, description, liveLink, repoLink, imgSrc }) => {
 
   const handleMouseLeave = () => {
     const card = cardRef.current;
-    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+    card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg)";
   };
 
-return (
-  <Card 
-    ref={cardRef} 
-    style={{ width: "35rem", transition: "transform 0.2s ease" }}
-    onMouseMove={handleMouseMove}
-    onMouseLeave={handleMouseLeave}
+  return (
+    <Card
+      ref={cardRef}
+      style={{ width: "35rem", transition: "transform 0.2s ease" }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
-    <Card.Img variant="top" src={imgSrc} className="img-fluid" />
-    <Card.Body>
-      <a href={liveLink} target="_blank" rel="noopener noreferrer" className="card-title">
-        <Card.Title>{title}</Card.Title>
-      </a>
-      <Card.Text>{description}</Card.Text>
-      <div className="icon-container">
-        <a href={liveLink} target="_blank" rel="noopener noreferrer">
-          <span data-info="Visit the app" className="expand tooltip">
-            <Window className="card-icons" color="white" size={50} />
-          </span>
+      <Card.Img variant="top" src={imgSrc} className="img-fluid" />
+      <Card.Body>
+        <a
+          href={liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-title"
+        >
+          <Card.Title>{title}</Card.Title>
         </a>
-        <a href={repoLink} target="_blank" rel="noopener noreferrer">
-          <span data-info="Visit the Repo" className="expand tooltip">
-            <Github className="card-icons" color="white" size={50} />
-          </span>
-        </a>
-      </div>
-    </Card.Body>
-  </Card>
-  )
+        <Card.Text>{description}</Card.Text>
+        <div className="icon-container">
+          <a href={liveLink} target="_blank" rel="noopener noreferrer">
+            <span data-info="Visit the app" className="expand tooltip">
+              <Window className="card-icons" color="white" size={50} />
+            </span>
+          </a>
+          <a href={repoLink} target="_blank" rel="noopener noreferrer">
+            <span data-info="Visit the Repo" className="expand tooltip">
+              <Github className="card-icons" color="white" size={50} />
+            </span>
+          </a>
+        </div>
+      </Card.Body>
+    </Card>
+  );
 };
 
 export default Project;

@@ -1,38 +1,36 @@
 // Data for Soft Skills section of Resume page
 export const resumeSkills = [
   {
-    title: 'Soft Skills',
+    title: "Soft Skills",
     skills: [
-      'Communication', 
-      'Leadership', 
-      'Critical Thinking',
-      'Problem-Solving',
-      'Creativity',
-      'Adaptability',
-      'Algorithmic Thinking',
-      'Initiative',
-      'Agile Development',
-      'Self-Learning',
-    ]
+      "Communication",
+      "Leadership",
+      "Critical Thinking",
+      "Problem-Solving",
+      "Creativity",
+      "Adaptability",
+      "Algorithmic Thinking",
+      "Initiative",
+      "Agile Development",
+      "Self-Learning",
+    ],
   },
   {
-    title: 'Soft Skills',
+    title: "Soft Skills",
     skills: [
-      'Team-Building',
-      'Emotional Intelligence',
-      'Teamwork & Collaboration',
-      'Self-Motivation',
-      'Time Management',
-      'Project Management',
-      'Attention to Detail',
-      'Research',
-      'Data Analysis',
-      'Data Visualization',
-    ]
+      "Team-Building",
+      "Emotional Intelligence",
+      "Teamwork & Collaboration",
+      "Self-Motivation",
+      "Time Management",
+      "Project Management",
+      "Attention to Detail",
+      "Researching",
+      "Data Analysis",
+      "Data Visualization",
+    ],
   },
-]
-
-
+];
 
 // {
 //   title: `Technical Skills`,

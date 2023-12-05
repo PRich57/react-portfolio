@@ -19,7 +19,7 @@ export const resumeRelevantExp = [
           `algorithmic-thinking`,
           `time-management`,
           `project-management`,
-        ]
+        ],
       },
       {
         description: `Achieved a historic 98 ESQi (Enterprise Service Quality index), the highest customer service score in Midwest Group's history for a flagship branch, and successfully mentored over 15 employees for promotion to management roles within a year`,
@@ -34,7 +34,7 @@ export const resumeRelevantExp = [
           `emotional-intelligence`,
           `teamwork-and-collaboration`,
           `time-management`,
-        ]
+        ],
       },
       {
         description: `Excelled as the premier Assistant Manager in the Midwest Group by crafting and executing tailored marketing strategies, leveraging team strengths to enhance corporate account relations and performance`,
@@ -45,12 +45,11 @@ export const resumeRelevantExp = [
           `initiative`,
           `time-management`,
           `project-management`,
-          `documentation-research`,
           `attention-to-detail`,
-          `research`,
+          `researching`,
           `data-analysis`,
           `data-visualization`,
-        ]
+        ],
       },
       {
         description: `Voluntarily transferred to the lowest-performing branch in Colorado to showcase management skills; successfully raised customer service score (ESQi) by 15 points and increased operating profit by 20% within two months`,
@@ -66,10 +65,10 @@ export const resumeRelevantExp = [
           `Initiative`,
           `emotional-intelligence`,
           `teamwork-and-collaboration`,
-          `self-motivated`,
+          `self-motivation`,
           `project-management`,
-          `attention-to-detail`
-        ]
+          `attention-to-detail`,
+        ],
       },
       {
         description: `Exemplified outstanding leadership by steering a dynamic team of over 30 professionals, overseeing comprehensive branch operations with a steadfast commitment to industry best practices and operational excellence`,
@@ -90,9 +89,9 @@ export const resumeRelevantExp = [
           `project-management`,
           `data-analysis`,
           `data-visualization`,
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     company: "Symmetry Financial Group",
@@ -107,12 +106,12 @@ export const resumeRelevantExp = [
           `communication`,
           `initiative`,
           `emotional-intelligence`,
-          `self-motivated`,
+          `self-motivation`,
           `time-management`,
-        ]
+        ],
       },
       {
-        description:  `Conducted monthly live sales call training sessions, sharing expertise and best practices with new hires to enhance objection handling and ethical sales processes`,
+        description: `Conducted monthly live sales call training sessions, sharing expertise and best practices with new hires to enhance objection handling and ethical sales processes`,
         relatedSkills: [
           `communication`,
           `leadership`,
@@ -124,7 +123,7 @@ export const resumeRelevantExp = [
           `emotional-intelligence`,
           `teamwork-and-collaboration`,
           `time-management`,
-        ]
+        ],
       },
       {
         description: `Innovated sales techniques, including personalized mortgage amortization schedules, to facilitate 'One-Call-Closes,' culminating in an average of over $1 million in monthly policy sales`,
@@ -138,13 +137,12 @@ export const resumeRelevantExp = [
           `algorithmic-thinking`,
           `initiative`,
           `emotional-intelligence`,
-          `self-motivated`,
-          `documentation-research`,
-          `research`,
+          `self-motivation`,
+          `researching`,
           `data-analysis`,
           `data-visualization`,
-        ]
-      }
-    ]
-  }
-]
+        ],
+      },
+    ],
+  },
+];
