@@ -79,7 +79,7 @@ function ContactForm() {
           <Form.Label>Name:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your name"
+            placeholder="Name"
             name='from_name'
             className='contactInput'
             value={name}
@@ -90,7 +90,7 @@ function ContactForm() {
           <Form.Label>Email address:</Form.Label>
           <Form.Control
             type="email"
-            placeholder="name@example.com"
+            placeholder="E-mail"
             name='reply_to'
             className='contactInput'
             value={email}
