@@ -19,7 +19,7 @@ export const resumeEducation = [
     school: 'Harvard University',
     degree: 'CS50 Certificate of Completion',
     startYear: 'May 2023',
-    endYear: 'Dec 2023',
+    endYear: 'Nov 2023',
     location: 'Remote (edX)'
   },
 ]
