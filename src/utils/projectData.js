@@ -1,7 +1,7 @@
 // Data for Project cards on Projects page
 import devRow from "/src/assets/dev-row-records.png";
 import gameSeekers from "/src/assets/gameSeekersScreenshot.png";
-import shortUrl from "/src/assets/short-url.png";
+import YouRL from "/src/assets/short-url.png";
 // import weatherDash from "/src/assets/weather-dashboard-screenshot.png";
 import blurb from "/src/assets/blurb.png";
 
@@ -15,11 +15,11 @@ export const projectData = [
     imgSrc: blurb,
   },
   {
-    title: `Short URL`,
-    description: `Simplify your links with Short URL, the ultimate solution for transforming lengthy web addresses into sleek, shareable links. Ideal for social media, digital marketing, or just easier sharing - make every link short and sharp with Short URL.`,
+    title: `YouRL`,
+    description: `Simplify your links with YouRL, the ultimate solution for transforming lengthy web addresses into sleek, shareable links. Ideal for social media, digital marketing, or just easier sharing - make every link short and sharp with YouRL.`,
     liveLink: `https://www.you-rl.xyz/`,
     repoLink: `https://github.com/PRich57/short-url`,
-    imgSrc: shortUrl,
+    imgSrc: YouRL,
   },
   {
     title: `Dev Row Records`,
