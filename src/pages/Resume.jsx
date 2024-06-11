@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pdf from "/src/assets/pete-richards-resume.pdf";
+import pdf from "/src/assets/Pete-Richards-Resume.pdf";
 import "../styles/components/Resume.css";
 import { Download } from "react-bootstrap-icons";
 import Button from "../components/Button";
