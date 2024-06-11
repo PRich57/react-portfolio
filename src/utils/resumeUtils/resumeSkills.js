@@ -32,6 +32,7 @@ export const resumeSkills = [
   },
 ];
 
+
 // {
 //   title: `Technical Skills`,
 //   languages: [
