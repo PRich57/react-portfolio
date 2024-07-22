@@ -1,6 +1,8 @@
+// Data for Project cards on Projects page
 import devRow from "/src/assets/dev-row-records.png";
 import gameSeekers from "/src/assets/gameSeekersScreenshot.png";
-import weatherDash from "/src/assets/weather-dashboard-screenshot.png";
+import YouRL from "/src/assets/short-url.png";
+// import weatherDash from "/src/assets/weather-dashboard-screenshot.png";
 import blurb from "/src/assets/blurb.png";
 
 // Create projectData array of objects to insert values for each project card
@@ -11,6 +13,13 @@ export const projectData = [
     liveLink: `https://blurb4-web-6d7dbae39646.herokuapp.com/`,
     repoLink: `https://github.com/ljkahn/Blurb`,
     imgSrc: blurb,
+  },
+  {
+    title: `YouRL`,
+    description: `Simplify your links with YouRL, the ultimate solution for transforming lengthy web addresses into sleek, shareable links. Ideal for social media, digital marketing, or just easier sharing - make every link short and sharp with YouRL.`,
+    liveLink: `https://www.you-rl.xyz/`,
+    repoLink: `https://github.com/PRich57/short-url`,
+    imgSrc: YouRL,
   },
   {
     title: `Dev Row Records`,
@@ -26,11 +35,11 @@ export const projectData = [
     repoLink: `https://github.com/ljkahn/videoGameProj`,
     imgSrc: gameSeekers,
   },
-  {
-    title: `Weather Dash`,
-    description: `Why step outside to check the weather when you can just tap your screen? Get your daily and 5-day forecasts with Weather Dash - where the forecast is always at your fingertips, rain or shine! Now you can finally stop blaming the weatherman for ruining your plans. 🌦️☔`,
-    liveLink: `https://prich57.github.io/weather-dash/`,
-    repoLink: `https://github.com/PRich57/weather-dash`,
-    imgSrc: weatherDash,
-  },
+  // {
+  //   title: `Weather Dash`,
+  //   description: `Why step outside to check the weather when you can just tap your screen? Get your daily and 5-day forecasts with Weather Dash - where the forecast is always at your fingertips, rain or shine! Now you can finally stop blaming the weatherman for ruining your plans. 🌦️☔`,
+  //   liveLink: `https://prich57.github.io/weather-dash/`,
+  //   repoLink: `https://github.com/PRich57/weather-dash`,
+  //   imgSrc: weatherDash,
+  // },
 ];

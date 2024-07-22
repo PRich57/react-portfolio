@@ -1,47 +1,28 @@
 import React from "react";
 import { resumeSkills } from "../../utils/resumeUtils/resumeSkills";
 
+// Functional component for rendering skills
 const Skills = () => {
+  // Function to generate skills based on skill category and individual skills
   const generateSkills = () => {
-    return resumeSkills.map((skill, index) => (
+    return resumeSkills.map((skillCategory, index) => (
       <div key={index} className="skills-container">
-        {/* <h5>{skill.title}</h5> */}
-        {skill.languages && skill.languages.map((language) => (
-          <div key={language.type}>
-            <h6>{language.type}</h6>
-            <ul className="resumeList">
-              {language.skills.map((skillName) => (
-                <li className="resumeItem" key={language.type + skillName}>{skillName}</li>
-              ))}
-            </ul>
-          </div>
+        <ul className="resumeList">
+        {skillCategory.skills.map((softSkill, softSkillIndex) => (
+          <li
+            className="resumeItem"
+            data-skill={softSkill.replace(/\s+/g, '-').toLowerCase().replace(/&/g, 'and').toLowerCase()}
+            key={softSkill + softSkillIndex}
+          >
+            {softSkill}
+          </li>
         ))}
-        {skill.tools && skill.tools.map((tool) => (
-          <div key={tool.type}>
-            <h6>{tool.type}</h6>
-            <ul className="resumeList">
-              {tool.skills.map((skillName) => (
-                <li className="resumeItem" key={tool.type + skillName}>{skillName}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-        {skill.skills && (
-          <ul className="resumeList">
-            {skill.skills.map((softSkill, softSkillIndex) => (
-              <li className="resumeItem" key={softSkill + softSkillIndex}>{softSkill}</li>
-            ))}
-          </ul>
-        )}
+        </ul>
       </div>
     ));
   };
 
-  return (
-    <>
-      {generateSkills()}
-    </>
-  );
+  return <>{generateSkills()}</>;
 };
 
 export default Skills;

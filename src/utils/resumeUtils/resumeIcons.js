@@ -1,3 +1,4 @@
+// Data for Technical Skills section of Resume page
 export const resumeIcons = [
   {
     src: "https://simpleicons.vercel.app/javascript/F0DB4F",

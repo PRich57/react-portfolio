@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUpCircleFill } from 'react-bootstrap-icons';
 
+// Component for a button to scroll to top of page when clicked
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Method to scroll to top
+  // Method to scroll to top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

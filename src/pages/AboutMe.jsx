@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import "../styles/components/AboutMe.css";
 import profilePic from "/src/assets/linkedin_profile_pic.jpg";
 
+// Function component that displays About Me section with Accordion
 export default function AboutMe() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function AboutMe() {
           <Accordion />
         </div>
       </div>
+      {/* TypeAnimation component for animated effect */}
       <h2>
         Check Out
         <TypeAnimation

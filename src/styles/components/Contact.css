@@ -6,19 +6,14 @@
   padding: 0 6rem;
 }
 
-label {
-  margin: 1rem;
-  margin-left: 4rem;
-  width: 30%;
-  color: rgb(210, 171, 255);
-}
-
 input, textarea {
   width: 70%;
   height: 2rem;
-  margin-left: 8rem;
+  /* margin-left: 8rem; */
+  margin: 0 auto;
   margin-top: 1rem;
   padding-left: 1rem;
+  border-radius: 6px;
   background-color: #2f004f;
 }
 
@@ -37,6 +32,10 @@ textarea {
   margin-bottom: .5rem;
 }
 
+.toast-container {
+  position: relative;
+}
+
 .toast {
   font-size: 1rem;
   color: red;
@@ -47,12 +46,21 @@ textarea {
   color: green;
 }
 
+.toastF, .toastS {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .submitBtn {
   border: 1px solid rgb(196, 88, 250);
   width: 8rem;
   height: 3rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  box-shadow: 2px 2px 8px black;
 }
 
 .submitBtn:hover {
@@ -61,22 +69,14 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-
   .mb-3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
-  textarea {
-    height: 6rem;
-    width: 100%;
-    margin: .7rem 0;
-  }
-  
-  label, input {
-    width: 100%;
-    margin: .7rem 0;
+
+  input, textarea {
+    width: 90%;
   }
 }
 
@@ -87,28 +87,12 @@ textarea {
 }
 
 @media screen and (max-width: 580px) {
-  /* form {
-    width: 100%;
-  } */
-  
-  label {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-  }
-
   h4.contact-message {
     font-size: 1.4rem;
     text-align: center;
   }
-  
-  /* input, textarea {
-    min-width: 10rem;
-    height: 2rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  } */
 
   textarea {
-    height: 4rem;
+    height: 6rem;
   }
 }

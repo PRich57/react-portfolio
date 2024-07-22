@@ -59,7 +59,7 @@ const MyNavbar = () => {
             onClick={() => handleTabClick("portfolio")}
           >
             <Button
-              content="Portfolio &nbsp;"
+              content="Projects &nbsp;"
               icon={<HiOutlineCodeBracketSquare />}
               className={activeTab === "portfolio" ? "active-btn" : ""}
             />

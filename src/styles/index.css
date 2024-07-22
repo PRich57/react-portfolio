@@ -131,6 +131,10 @@ button:focus-visible {
     width: 15rem;
     height: 15rem;
   }
+
+  .navbar-nav {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 563px) {

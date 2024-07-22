@@ -4,65 +4,87 @@
 
 ## Description
 
-  Welcome to my portfolio! I'm Pete Richards, a Software Developer currently enrolled in the University of Denver's Coding Boot Camp. My portfolio provides a snapshot of my coding journey, skills, and experiences. It's built using React and serves as a guide to who I am as a developer.
+  Welcome to my portfolio! I'm Pete Richards, a Software Developer and recent graduate of the University of Denver's Coding Boot Camp. My portfolio provides a snapshot of my coding journey, skills, and experiences. It's built using React and serves as a guide to who I am as a developer.
 
-  To visit my portfolio click [here!](https://gilded-capybara-c5a5b7.netlify.app/)
+  To visit my portfolio click [here!](https://pete-richards.netlify.app/)
 
 ## Table of Contents
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Mock-Up](#mock-up)
-  - [License](#license)
-  - [Contributing](#contributing)
+  - [Navigation](#navigation)
+  - [About Me](#about-me)
+  - [Projects](#projects)
+  - [Contact](#contact)
+  - [Resume](#resume)
+  - [Questions](#questions)
 
 ## Installation
 
-  N/A
+  No installation is required.
 
 ## Usage
 
-  Follow the instructions below to navigate through Pete's Portfolio:
+  To navigate through my portfolio, follow the instructions below:
+  
+  <a id="navigation"></a>
 
   ##### Navigation
   
-  - Easily navigate between my About Me, Portfolio, Contact, and Resume pages using the navigation bar at the top of the page 
-  - Your current location will always be highlighted in the navigation bar so you never have to wonder which page you're on
-  - If you look to the bottom left of any page you will also find links to my GitHub, LinkedIn, and Spotify accounts
+  - Easily switch between different sections using the navigation bar at the top of the page.
+  - Your current location will always be highlighted in the navigation bar to keep track of the active page.
+  - Find links to my GitHub and LinkedIn accounts at the bottom left of any page.
+  - If vertical scrolling is needed on a page, a scroll-to-top button in the form of a white circle with an arrow pointing - up will appear on the bottom right. Click it to return to the top of the page.
 
+  ![Video of Navigation usage](./src/assets/navigation.gif)
+
+  <a id="about-me"></a>
   ##### About Me
 
-  On the homepage, you'll find an 'About Me' section designed to give you a snapshot of who I am both as a developer and a person. This area features not only a brief summary of my coding journey, but also a recent photograph to offer a more personal glimpse into the person behind the code. As you explore the rest of my portfolio, I hope this introduction provides a meaningful context for the work and skills you'll encounter.
+  - The homepage features my About Me section, providing insights into both my developer journey and personal life.
+  - Content is organized within a custom accordion component.
+  - Click on any accordion header to reveal the contents of that section while hiding the others.
+  - This section offers a brief summary of my coding journey, along with a recent photograph to add a personal touch.
 
-  ##### Portfolio
+  ![Video of About Me Page](./src/assets/about-me-page.gif)
 
-  - Click "Portfolio" in the navigation bar to be taken to the Portfolio page, where I highlight 6 of my projects.
-  - Scroll through my projects to view their respective screenshots, titles, descriptions and links to their live sites and GitHub repositories.
+  <a id="projects"></a>
+  ##### Projects
 
+  - Click "Projects" in the navigation bar to access the Projects page, showcasing four of my top projects.
+  - Scroll through project cards to view screenshots, titles, descriptions, and links to live sites and GitHub repositories.
+  - Each card has dynamic tilt functionality that responds to mouse movement when hovering.
+
+  ![Video of Projects Page](./src/assets/projects-page.gif)
+
+  <a id="contact"></a>
   ##### Contact
 
-  - On the Contact page, you'll find a form with fields for Name, Email Address, and Message
-  - Each field must be filled out before submitting
-  - If the email address isn't properly formatted (Ex: example@email.com) the form cannot be submitted
-  - Upon submitting the information, a success or failure message will be displayed on the screen for 3 seconds
-  - If the success message appears, I will receive an email from you and will respond promptly
-  - If an error message appears, verify your information was entered correctly and try again
+  - The Contact page includes a form with fields for Name, Email Address, and Message.
+  - Fill out all fields before submitting.
+  - Ensure the email address is correctly formatted (e.g., example@email.com) for successful submission.
+  - Upon submission, a success or failure message will appear for 3 seconds.
+  - If successful, I will receive your email and respond promptly.
+  - In case of an error, verify your information and try again.
 
+  ![Video of Contact Page](./src/assets/contact-page.gif)
+
+  <a id="resume"></a>
   ##### Resume
   
-  - The Resume page shows an image of my current resume
-  - To download a PDF version, simply click the image and a new browser tab will open where it can be downloaded
+  - The Resume page displays Technical Skills at the top, followed by a button to access my official resume.
+  - Below Technical Skills, you'll find Soft Skills on the left and Relevant Experience on the right, with Education at the bottom.
+  - Click the button under "Resume" to open my official resume in a new tab.
+  - Technical Skills are represented by icons, with technology names and skill levels displayed sequentially at a 2-second interval. Hovering over an icon interrupts the sequence and shows details.
+  - Soft Skills correlate with Relevant Experience. Hovering over experience items highlights associated soft skills.
+  - Relevant Experience emphasizes work history that demonstrates valuable soft skills for software development roles.
+  - The Education section lists my B.S. from Ohio University and recent Software Development certificates.
 
-## Mock-Up
+  ![Video of Resume Page](./src/assets/resume-page.gif)
 
-  The following video shows the application's design and functionality.
+## Questions
 
-  ![Image of Pete's Portfolio](./src/assets/react-portfolio-screenshot.png)
+  Please feel free to contact me with any questions! You can message me on LinkedIn via the link below or email me through the contact page on my portfolio.
 
-## License
+  LinkedIn: [PRich57](https://www.linkedin.com/in/peterrichards57/)
 
-  N/A
-
-## Contributing
-
-  N/A

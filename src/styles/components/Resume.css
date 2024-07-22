@@ -3,7 +3,8 @@
   width: 16rem;
   height: 3rem;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
+  box-shadow: 1px 1px 8px black;
 }
 
 .resumeBtn:hover {
@@ -15,22 +16,70 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  /* grid-template-rows: repeat(2, 1fr); */
   align-items: start;
-  /* gap: 4rem; */
   padding-bottom: 0;
   margin-bottom: 1rem;
   max-width: 100%;
 }
 
-.tech-icons {
+.resumeWide {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: start;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.acrossBottom {
+  text-align: center;
+}
+
+.exp-headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 1rem; */
+  /* font-style: italic; */
+  font-size: 1rem;
+}
+
+.exp-company, .edu-school {
+  width: 70%;
+  margin: 0 auto;
+  color: var(--headingColor);
+  font-style: italic;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 4px black;
+}
+
+.experienceList {
+  padding-left: 0;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+li.experienceItem {
+  font-size: 1.1rem;
   margin: 1rem;
+  font-style: italic;
+}
+
+.tech-icon-container {
+  margin: 0 2rem;
+}
+
+.tech-icons {
+  margin: 1.5rem 1rem;
   width: 50px;
   height: 50px;
   padding: .5rem;
-  /* padding-bottom: 0; */
   border: 1px solid rgba(115, 0, 172, 0.484);
   border-radius: 1rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.687);
 }
 
 .tech-icons:hover {
@@ -48,6 +97,8 @@
   background-color: rgba(72, 0, 131, 0.5);
   border-radius: 4px;
   margin: 8px 0px;
+  margin-top: 6px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.763);
 }
 
 .left,
@@ -56,20 +107,21 @@
 }
 
 .resumeSections {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background-color: rgba(137, 43, 226, 0.322);
   border-radius: 4px;
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
   padding: .5rem;
   max-width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.674);
 }
 
 .resumeContent {
   padding: 2rem;
   padding-top: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   word-wrap: break-word;
   max-width: 100%;
 }
@@ -78,36 +130,36 @@
   list-style: none;
   text-align: left;
   padding: 0;
-  /* padding-left: 6rem; */
+  padding-left: 6rem;
   position: relative;
   max-width: 100%;
 }
 
-.resumeList li {
+.resumeContent li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 2rem;
   max-width: 100%;
 }
 
-.resumeList li::before {
+.resumeContent li::before {
   content: '';
   position: absolute;
   left: -1px;
   top: 0%;
   bottom: 0;
-  height: 160%;
+  height: 200%;
   border-left: 2px solid var(--headingColor);
   box-shadow: 0px 0px 5px var(--headingColor);
 }
 
-.resumeList li::after {
+.resumeContent li::after {
   content: '';
   position: absolute;
   left: 0;
   top: 12px;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 2px solid var(--headingColor);
@@ -115,25 +167,20 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.resumeList li:first-child::before {
-  top: 80%;
+.resumeContent li:first-child::before {
+  top: 20%;
   height: 200%
 }
 
-.resumeList li:last-child::before {
+.resumeContent li:last-child::before {
   top: 0%;
-  height: 100%;
+  height: 90%;
   content: '';
 }
 
-li.resumeItem {
+.resumeContent li.resumeItem {
   margin: .7rem;
-  font-size: .9rem;
-}
-
-.acrossBottom {
-  text-align: center;
-  padding: 0 2rem;
+  font-size: 1.2rem;
 }
 
 .skills {
@@ -146,11 +193,18 @@ li.resumeItem {
   margin: 1rem auto;
 }
 
+.glow {
+  text-shadow: 4px 4px 5px var(--headingColor);
+  /* text-decoration: underline; */
+  font-style: italic;
+  scale: 1.6rem;
+  color: var(--headingColor);
+}
+
 h4 {
   margin: 0;
   margin-bottom: 1rem;
   padding: 0;
-  /* font-size: 3rem; */
 }
 
 h5 {
@@ -160,7 +214,6 @@ h5 {
   background-color: rgba(56, 0, 108, 0.518);
   display: flex;
   justify-content: center;
-  /* margin: 1rem; */
   padding: 4px;
   border-radius: 4px;
 }
@@ -174,9 +227,55 @@ h6 {
   color: aliceblue;
 }
 
+.edu-degree,
+.edu-location,
+.edu-date,
+.edu-minor,
+.exp-title,
+.exp-location,
+.exp-date {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.edu-degree,
+.exp-title {
+  margin-top: .7rem;
+}
+
+@media screen and (max-width: 1870px) {
+  .resumeList {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .experienceList {
+    width: 90%;
+  }
+
+  .resumeList {
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  .exp-headers {
+    flex-direction: column;
+    font-size: .8rem;
+  }
+
+  .experienceList {
+    width: 100%;
+  }
+
+  li.experienceItem {
+    font-size: 1rem;
+  }
+
   .resumeSections {
     font-size: 1.3rem;
+    margin-bottom: .5rem;
   }
   
   .resumeContent {
@@ -185,29 +284,50 @@ h6 {
     padding-top: 0;
   }
 
-  .resumeList {
-    text-align: center;
-    /* padding-left: 0; */
+  .resumeList li::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    bottom: 0;
+    height: 160%;
+    border-left: 2px solid var(--headingColor);
+    box-shadow: 0px 0px 5px var(--headingColor);
   }
-
+  
+  .resumeList li::after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid var(--headingColor);
+    box-shadow: 0px 0px 10px var(--headingColor);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
   h5 {
     margin: 0 auto;
   }
-
+  
   h6 {
     text-align: center;
   }
-}
 
-@media screen and (max-width: 1100px) {
   .resume {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 2fr));
-    /* grid-template-rows: repeat(1, 2fr); */
     gap: 0;
     padding-bottom: 0;
     margin-bottom: 1rem;
     max-width: 100%;
+  }
+
+  .experienceList {
+    padding-left: 0;
   }
 
   .resumeSections{
@@ -219,7 +339,7 @@ h6 {
     padding-top: .5rem;
   }
 
-  .resumeList li::before {
+  /* .resumeList li::before {
     content: '';
     position: absolute;
     left: 50px;
@@ -242,7 +362,7 @@ h6 {
     border: 2px solid var(--headingColor);
     box-shadow: 0px 0px 10px var(--headingColor);
     transform: translateX(-50%) translateY(-50%);
-  }
+  } */
   
   .resumeList li:first-child::before {
     top: 80%;
@@ -257,23 +377,25 @@ h6 {
 }
 
 @media screen and (max-width: 1000px) {
-  .resume {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 2fr));
-    /* grid-template-rows: repeat(1, 2fr); */
-    gap: 0;
-    padding-bottom: 0;
-    margin-bottom: 1rem;
-    max-width: 100%;
-  }
-
   .resumeSections{
     padding: 1rem;
+  }
+
+  .exp-headers {
+    font-size: .9rem;
+  }
+
+  .exp-company, .edu-school {
+    font-size: 1.1rem;
   }
 
   .resumeContent {
     padding: 1rem 3rem;
     padding-top: .5rem;
+  }
+
+  .resumeContent li.resumeItem {
+    font-size: 1rem;
   }
 
   .resumeList li::before {
@@ -311,12 +433,24 @@ h6 {
     height: 100%;
     content: '';
   }
-}
 
-@media screen and (max-width: 1000px) {
   .skills-container {
     margin: 0;
     width: 100%;
+  }
+  
+  h5 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .exp-headers {
+    margin-bottom: 0;
+  }
+
+  .exp-date {
+    margin-bottom: 0;
   }
 
   .skills {
@@ -325,8 +459,8 @@ h6 {
     justify-content: center;
     align-items: center;
   }
-  
-  h5 {
-    text-align: center;
+
+  .experience {
+    padding: 0 1rem;
   }
 }

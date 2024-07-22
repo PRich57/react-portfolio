@@ -1,5 +1,8 @@
 const AccordionItem = ({ info, onToggle, active }) => {
+  // Destructure info, title, and content from props
   const { title, content } = info;
+
+  // Component for each accordion item
   return (
     <li className={`accordion_item ${active ? "active" : ""}`}>
       <button className="accordion_button" onClick={onToggle}>

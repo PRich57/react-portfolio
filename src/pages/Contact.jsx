@@ -19,7 +19,7 @@ function ContactForm() {
     const timer = setTimeout(() => {
       setShowSuccessMessage(false);
       setNotValid(false);
-    }, 3000)
+    }, 4000)
 
     return () => {
       clearTimeout(timer)
@@ -46,7 +46,7 @@ function ContactForm() {
       return;
     }
 
-    // Use emailJS with .env protected keys
+    // Use emailJS to send form
     emailjs.sendForm('service_d1wsx7u', 
       'template_vmxvdqx', 
       form.current, 
@@ -74,12 +74,12 @@ function ContactForm() {
 
   return (
     <>
-      <Form ref={form} onSubmit={sendEmail} className='d-flex lg-col-6 flex-column align-items-space-around'>
+      <Form ref={form} onSubmit={sendEmail} className='d-flex lg-col-6 flex-column align-items-center'>
         <Form.Group className="mb-3" controlId="Form.ControlInput1">
-          <Form.Label>Name:</Form.Label>
+          {/* <Form.Label>Name:</Form.Label> */}
           <Form.Control
             type="text"
-            placeholder="Enter your name"
+            placeholder="Name"
             name='from_name'
             className='contactInput'
             value={name}
@@ -87,10 +87,10 @@ function ContactForm() {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="Form.ControlInput2">
-          <Form.Label>Email address:</Form.Label>
+          {/* <Form.Label>Email address:</Form.Label> */}
           <Form.Control
             type="email"
-            placeholder="name@example.com"
+            placeholder="E-mail"
             name='reply_to'
             className='contactInput'
             value={email}
@@ -98,29 +98,32 @@ function ContactForm() {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="Form.ControlTextarea1">
-          <Form.Label>Message:</Form.Label>
+          {/* <Form.Label>Message:</Form.Label> */}
           <Form.Control
             as="textarea"
             rows={5}
+            placeholder='Message...'
             name='message'
             className='contactInput'
             value={message}
             onChange={handleChange(setMessage)}
           />
         </Form.Group>
-        {notValid && (
-          <Toast className='contactInput container toastF' variant='info'>
-            Please fill out all input fields before sending.
-          </Toast>
-        )}
-        {showSuccessMessage && (
-          <Toast className='contactInput container toastS' variant='success'>
-            Your message has been sent successfully!
-          </Toast>
-        )}
-        <Button className='submitBtn' type='submit'>
-          Send
-        </Button>
+        <div className='toast-container'>
+          {notValid && (
+            <Toast className='contactInput container toastF' variant='info'>
+              Please fill out all input fields before sending.
+            </Toast>
+          )}
+          {showSuccessMessage && (
+            <Toast className='contactInput container toastS' variant='success'>
+              Your message has been sent successfully!
+            </Toast>
+          )}
+          <Button className='submitBtn' type='submit'>
+            Send
+          </Button>
+        </div>
       </Form>
       <h4 className='contact-message'>
         Let's build something cool together!
