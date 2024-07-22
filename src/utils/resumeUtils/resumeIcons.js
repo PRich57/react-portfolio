@@ -6,9 +6,9 @@ export const resumeIcons = [
     data: "JavaScript - Advanced"
   },
   {
-    src: "https://simpleicons.vercel.app/c/044F88",
-    alt: "C icon",
-    data: "C - Proficient"
+    src: "https://simpleicons.now.sh/react/FF4154",
+    alt: "React icon",
+    data: "React - Advanced"
   },
   {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png",
@@ -16,9 +16,19 @@ export const resumeIcons = [
     data: "Python - Advanced"
   },
   {
-    src: "https://simpleicons.now.sh/react/FF4154",
-    alt: "React icon",
-    data: "React - Advanced"
+    src: "https://simpleicons.now.sh/nodedotjs/339933",
+    alt: "Node.js icon",
+    data: "Node.js - Advanced"
+  },
+  {
+    src: "https://simpleicons.now.sh/flask/EEEEEE",
+    alt: "Flask icon",
+    data: "Flask - Proficient"
+  },
+  {
+    src: "https://simpleicons.vercel.app/c/044F88",
+    alt: "C icon",
+    data: "C - Proficient"
   },
   {
     src: "https://simpleicons.vercel.app/jquery/0769AD",
@@ -39,11 +49,6 @@ export const resumeIcons = [
     src: "https://simpleicons.now.sh/express/ffffff",
     alt: "Express.js icon",
     data: "Express.js - Advanced"
-  },
-  {
-    src: "https://simpleicons.now.sh/nodedotjs/339933",
-    alt: "Node.js icon",
-    data: "Node.js - Advanced"
   },
   {
     src: "https://simpleicons.now.sh/graphql/e10098",
